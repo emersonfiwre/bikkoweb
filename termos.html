@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos e Condições de Uso — Bikkofy &amp; Bikkerfy</title>
+  <meta name="description" content="Termos e Condições Gerais de Uso dos aplicativos Bikkofy (Clientes) e Bikkerfy (Prestadores de Serviço / Bikkers)." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#121212" />
+  <style>
+    :root {
+      --brand-yellow: #FFD600;
+      --brand-amber: #F2AD0D;
+      --brand-dark: #121212;
+      --brand-surface: #1E1E1E;
+      --bg-page: #F8F9FA;
+      --bg-card: #FFFFFF;
+      --text-primary: #18181B;
+      --text-secondary: #52525B;
+      --text-muted: #71717A;
+      --border-color: #E4E4E7;
+      --highlight-bg: #FFFBEB;
+      --highlight-border: #FDE68A;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.68;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .site-header {
+      background-color: var(--brand-dark);
+      color: #FFFFFF;
+      border-bottom: 3px solid var(--brand-yellow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, var(--brand-yellow), var(--brand-amber));
+      color: var(--brand-dark);
+      font-weight: 900;
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #E4E4E7;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: var(--brand-yellow);
+    }
+
+    .nav-links a.active {
+      background-color: var(--brand-yellow);
+      color: var(--brand-dark);
+      font-weight: 700;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #18181B 0%, #121212 100%);
+      color: #FFFFFF;
+      padding: 48px 20px 40px;
+      border-bottom: 1px solid #27272A;
+    }
+
+    .hero-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--brand-yellow);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      color: #A1A1AA;
+      font-size: 1.02rem;
+      max-width: 760px;
+    }
+
+    .meta-bar {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #D4D4D8;
+    }
+
+    .meta-pill {
+      background-color: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .meta-pill code {
+      color: var(--brand-yellow);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+    }
+
+    .main-container {
+      max-width: 960px;
+      margin: 32px auto 64px;
+      padding: 0 20px;
+    }
+
+    .section-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: 84px;
+    }
+
+    .section-card h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.015em;
+    }
+
+    .section-num {
+      background-color: var(--brand-yellow);
+      color: var(--brand-dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 18px 0 8px;
+    }
+
+    .section-card p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    .section-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-card ul,
+    .section-card ol {
+      color: var(--text-secondary);
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    .section-card li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background-color: var(--highlight-bg);
+      border: 1px solid var(--highlight-border);
+      border-left: 4px solid var(--brand-amber);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .site-footer {
+      background-color: var(--brand-dark);
+      color: #A1A1AA;
+      padding: 40px 20px;
+      border-top: 1px solid #27272A;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--brand-yellow);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .section-card {
+        padding: 20px 18px;
+      }
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span>Bikkofy &amp; Bikkerfy</span>
+        <span class="brand-badge">Oficial</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação institucional">
+        <a href="index.html">Início</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html" class="active" aria-current="page">Termos de Uso</a>
+        <a href="privacidade.html#exclusao-de-conta">Exclusão de Conta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Condições Gerais de Uso</span>
+      <h1>Termos e Condições de Uso</h1>
+      <p>
+        Estes Termos e Condições de Uso regulam o acesso e a utilização dos aplicativos <strong>Bikkofy</strong> (Clientes) e <strong>Bikkerfy</strong> (Prestadores de Serviço / Bikkers). Ao criar uma conta ou utilizar nossos serviços, você concorda integralmente com as regras abaixo.
+      </p>
+      <div class="meta-bar">
+        <span class="meta-pill">App Cliente: <code>br.com.bikkofy.bikko</code></span>
+        <span class="meta-pill">App Prestador: <code>br.com.bikkofy.bikker</code></span>
+        <span class="meta-pill">Vigência: <strong>Outubro de 2026</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-container">
+
+    <!-- 1. Natureza da Plataforma -->
+    <section class="section-card">
+      <h2><span class="section-num">1</span> Natureza da Plataforma (Intermediação e Conexão)</h2>
+      <p>
+        O ecossistema <strong>Bikkofy &amp; Bikkerfy</strong> consiste em uma plataforma tecnológica de descoberta, aproximação e negociação de orçamentos que conecta <strong>Clientes</strong> (usuários do aplicativo <strong>Bikkofy</strong>) a <strong>Prestadores de Serviço Autônomos e Independentes ("Bikkers")</strong> (usuários do aplicativo <strong>Bikkerfy</strong>).
+      </p>
+      <div class="highlight-box">
+        <strong>Inexistência de Vínculo Empregatício:</strong> O Bikkofy/Bikkerfy <strong>não presta diretamente serviços de manutenção, reparos ou assistência domiciliar</strong>, nem atua como empregador, subcontratante ou representante legal dos Prestadores ("Bikkers"). Os Bikkers atuam com total autonomia técnica, operacional e de agenda, sem qualquer subordinação ou vínculo trabalhista (CLT) com a plataforma.
+      </div>
+    </section>
+
+    <!-- 2. Cadastro e Elegibilidade -->
+    <section class="section-card">
+      <h2><span class="section-num">2</span> Cadastro, Elegibilidade e Segurança da Conta</h2>
+      <ul>
+        <li><strong>Maioridade Civil:</strong> O cadastro como Cliente ou Prestador (Bikker) é exclusivo para pessoas físicas maiores de 18 (dezoito) anos e plenamente capazes nos termos da legislação civil brasileira.</li>
+        <li><strong>Veracidade Cadastral:</strong> O usuário compromete-se a fornecer dados verdadeiros, exatos e atualizados (incluindo Nome Completo, CPF válido, E-mail e Telefone Celular).</li>
+        <li><strong>Autenticação por SMS OTP:</strong> O acesso à conta é pessoal e intransferível, realizado mediante verificação de código único enviado por SMS ao número de telefone cadastrado. O usuário é responsável por manter a segurança do seu aparelho celular.</li>
+      </ul>
+    </section>
+
+    <!-- 3. Orçamentos, Contrapropostas e Pagamentos -->
+    <section class="section-card">
+      <h2><span class="section-num">3</span> Solicitações de Orçamento, Contrapropostas e Pagamentos</h2>
+      <p>
+        O fluxo de contratação no ecossistema Bikkofy &amp; Bikkerfy ocorre de maneira transparente e documentada:
+      </p>
+      <ol>
+        <li><strong>Solicitação de Orçamento:</strong> O Cliente descreve a necessidade do serviço (até 280 caracteres), anexa fotos opcionais do local/problema e seleciona a localização do atendimento.</li>
+        <li><strong>Proposta e Negociação (Contrapropostas):</strong> O Prestador analisa o chamado pelo Radar do <strong>Bikkerfy</strong> e pode enviar uma proposta de valor ou recusar o chamado informando o motivo. Caso desejem ajustar o valor, Cliente e Prestador dispõem de um sistema estruturado de negociação com limite de até <strong>5 (cinco) rodadas de contrapropostas</strong>, registrando valores e justificativas no histórico do chamado.</li>
+        <li><strong>Aceite e Ordem de Serviço:</strong> Uma vez aceito o valor por ambas as partes, a solicitação converte-se em um serviço ativo para execução conforme combinado entre Cliente e Prestador.</li>
+      </ol>
+      <div class="highlight-box">
+        <strong>Pagamento Direto entre Cliente e Prestador:</strong> Nesta fase operacional da plataforma, <strong>o pagamento pelo serviço prestado é realizado diretamente pelo Cliente ao Prestador (Bikker)</strong> (via Pix, dinheiro ou outro meio acordado entre as partes após a conclusão do serviço). O Bikkofy/Bikkerfy não realiza custódia financeira, retenção de valores em conta de passagem nem processamento direto de cartões dentro do aplicativo nesta modalidade.
+      </div>
+    </section>
+
+    <!-- 4. Responsabilidades -->
+    <section class="section-card">
+      <h2><span class="section-num">4</span> Responsabilidades do Cliente e do Prestador (Bikker)</h2>
+
+      <h3>4.1. Deveres do Prestador de Serviço (Bikker)</h3>
+      <ul>
+        <li>Executar os serviços acordados com zelo, pontualidade, segurança técnica e respeito às normas aplicáveis à sua especialidade profissional;</li>
+        <li>Manter seu portfólio de serviços realizados apenas com fotos reais e autênticas de sua própria autoria;</li>
+        <li>Prestar informações claras no <strong>Relatório Técnico de Conclusão</strong> ao finalizar um atendimento no aplicativo Bikkerfy;</li>
+        <li>Respeitar a integridade física, patrimonial e moral dos Clientes.</li>
+      </ul>
+
+      <h3>4.2. Deveres do Cliente</h3>
+      <ul>
+        <li>Fornecer informações precisas e fotos verídicas sobre o serviço solicitado para possibilitar um orçamento justo;</li>
+        <li>Garantir condições seguras no local de realização do serviço;</li>
+        <li>Efetuar pontualmente o pagamento acordado diretamente ao Prestador conforme o orçamento aprovado no aplicativo;</li>
+        <li>Tratar os profissionais com urbanidade, respeito e boa-fé.</li>
+      </ul>
+
+      <h3>4.3. Avaliações Pós-Serviço</h3>
+      <p>
+        Após a conclusão de cada serviço, tanto o Cliente quanto o Prestador podem avaliar a experiência em estrelas (de 1 a 5) e comentários. As avaliações devem refletir experiências reais e não podem conter ofensas discriminatórias, difamação, dados pessoais sensíveis ou linguagem imprópria.
+      </p>
+    </section>
+
+    <!-- 5. Cancelamento, Suspensão e Exclusão -->
+    <section class="section-card">
+      <h2><span class="section-num">5</span> Cancelamento de Chamados, Suspensão e Exclusão de Conta</h2>
+      <ul>
+        <li><strong>Cancelamento de Solicitações:</strong> Tanto o Cliente quanto o Prestador podem cancelar uma solicitação antes da execução do serviço, selecionando o motivo correspondente no aplicativo. Cancelamentos reiterados de má-fé podem resultar em suspensão preventiva da conta.</li>
+        <li><strong>Suspensão por Violação dos Termos:</strong> A plataforma reserva-se o direito de bloquear ou suspender contas que pratiquem fraudes, utilizem dados falsos, assediem outros usuários ou violem a legislação vigente.</li>
+        <li><strong>Exclusão Voluntária da Conta:</strong> O usuário pode encerrar e excluir sua conta a qualquer momento diretamente no aplicativo em <code>Perfil &gt; Configurações &gt; Excluir minha conta</code> ou conforme detalhado na nossa <a href="privacidade.html#exclusao-de-conta">Política de Privacidade</a>.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Disposições Gerais e Foro -->
+    <section class="section-card">
+      <h2><span class="section-num">6</span> Propriedade Intelectual, Privacidade e Foro</h2>
+      <p>
+        As marcas, logotipos, layouts, código-fonte e interfaces dos aplicativos <strong>Bikkofy</strong> e <strong>Bikkerfy</strong> são de titularidade exclusiva da plataforma, sendo vedada sua reprodução ou engenharia reversa.
+      </p>
+      <p>
+        O tratamento de dados pessoais rege-se pela nossa <a href="privacidade.html">Política de Privacidade Oficial</a>, que integra estes Termos para todos os fins legais.
+      </p>
+      <p>
+        Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de São Paulo — SP (ou o foro do domicílio do consumidor, quando aplicável o Código de Defesa do Consumidor) para dirimir eventuais controvérsias oriundas deste instrumento.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Portal Institucional</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos e Condições de Uso</a>
+        <a href="privacidade.html#exclusao-de-conta">Exclusão de Conta</a>
+      </div>
+      <p>© 2026 Bikkofy &amp; Bikkerfy. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
