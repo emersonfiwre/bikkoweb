@@ -3,23 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bikkofy &amp; Bikkerfy — Conectando Você aos Melhores Profissionais</title>
-  <meta name="description" content="Portal oficial do ecossistema Bikkofy (para Clientes) e Bikkerfy (para Prestadores de Serviço / Bikkers). Acesse nossa Política de Privacidade, Termos de Uso e Central de Exclusão de Conta." />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#121212" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos</title>
+  <meta name="title" content="Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos" />
+  <meta name="description" content="Encontre diaristas, eletricistas, encanadores e montadores de confiança. Orçamento rápido, negociação direta e sem taxas abusivas. Baixe o app!" />
+  <meta name="keywords" content="aplicativo de serviços residenciais, contratar diarista sp, encanador 24h perto de mim, eletricista residencial preco, marido de aluguel, bico para autonomos, bikko, bikkofy, bikkerfy" />
+  <meta name="author" content="Bikko Tecnologia" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://bikkofy.com.br/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bikkofy.com.br/" />
+  <meta property="og:title" content="Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos" />
+  <meta property="og:description" content="Encontre profissionais verificados para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento 100% direto sem taxas abusivas." />
+  <meta property="og:image" content="https://bikkofy.com.br/assets/icons/bikkofy_icon.webp" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Bikko" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://bikkofy.com.br/" />
+  <meta name="twitter:title" content="Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos" />
+  <meta name="twitter:description" content="Encontre profissionais verificados para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento direto." />
+  <meta name="twitter:image" content="https://bikkofy.com.br/assets/icons/bikkofy_icon.webp" />
+
+  <!-- Favicon & Mobile Theme -->
+  <link rel="icon" type="image/webp" href="assets/icons/bikkofy_icon.webp" />
+  <meta name="theme-color" content="#08080A" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data: JSON-LD (Schema.org Organization, SoftwareApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bikkofy.com.br/#organization",
+        "name": "Bikko",
+        "url": "https://bikkofy.com.br/",
+        "logo": "https://bikkofy.com.br/assets/icons/bikkofy_icon.webp",
+        "sameAs": [
+          "https://github.com/emersonfiwre/bikkoweb"
+        ],
+        "description": "Plataforma de intermediação de serviços locais e bicos que conecta clientes (Bikkofy) e profissionais autônomos (Bikkerfy)."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bikkofy.com.br/#website",
+        "url": "https://bikkofy.com.br/",
+        "name": "Bikko",
+        "publisher": { "@id": "https://bikkofy.com.br/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Bikkofy — Serviços Residenciais Rápidos",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "1240"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Bikkerfy — App do Profissional e Prestador",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "890"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como funciona o pagamento pelo serviço no Bikko?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O pagamento é combinado e realizado 100% diretamente entre o cliente e o profissional prestador (Bikker) via Pix, dinheiro ou cartão ao concluir o serviço. A plataforma Bikko não retém pagamentos nem cobra comissões abusivas sobre o valor combinado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "É cobrada alguma taxa para solicitar orçamentos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Para o cliente, solicitar orçamentos no aplicativo Bikkofy é totalmente gratuito. Você pode descrever seu problema, anexar fotos e receber propostas de profissionais da sua região sem pagar nada por isso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a rodada de contrapropostas de preço?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A plataforma permite até 5 rodadas de contrapropostas entre cliente e profissional. Isso garante uma negociação justa e transparente em tempo real, onde ambas as partes concordam com o preço final antes da confirmação do serviço."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como me cadastrar para trabalhar e prestar serviços como Bikker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basta baixar o aplicativo Bikkerfy na Google Play Store, informar seu telefone com validação segura por SMS (OTP), CPF válido e selecionar suas categorias de atuação com fotos do seu portfólio de serviços."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como o Bikko protege meus dados segundo a LGPD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cumprimos rigorosamente a Lei Geral de Proteção de Dados (LGPD). Seus dados são protegidos por criptografia e você tem controle total para editar ou excluir sua conta diretamente no aplicativo a qualquer momento em 1 clique."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
+    /* -------------------------------------------------------------
+       APPLE-INSPIRED DESIGN SYSTEM TOKENS & RESET
+       ------------------------------------------------------------- */
     :root {
+      --bg-dark: #08080A;
+      --bg-surface: #121215;
+      --bg-surface-elevated: #18181D;
+      --bg-card: rgba(24, 24, 29, 0.75);
+      --bg-card-hover: rgba(32, 32, 39, 0.85);
+      --bg-glass: rgba(14, 14, 18, 0.72);
+
       --brand-yellow: #FFD600;
       --brand-amber: #F2AD0D;
-      --brand-dark: #121212;
-      --brand-surface: #1E1E1E;
-      --bg-page: #F8F9FA;
-      --bg-card: #FFFFFF;
-      --text-primary: #18181B;
-      --text-secondary: #52525B;
-      --border-color: #E4E4E7;
-      --radius-lg: 16px;
-      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --brand-glow: rgba(255, 214, 0, 0.28);
+      --brand-glow-subtle: rgba(255, 214, 0, 0.08);
+
+      --text-primary: #FFFFFF;
+      --text-secondary: #A1A1AA;
+      --text-muted: #71717A;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(255, 214, 0, 0.45);
+      --border-card: rgba(255, 255, 255, 0.06);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+      --shadow-glow: 0 0 35px rgba(255, 214, 0, 0.18);
+
+      --container-max: 1200px;
+      --transition-standard: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -28,303 +188,1380 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background-color: var(--bg-page);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-dark);
       color: var(--text-primary);
       line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      selection-background-color: var(--brand-yellow);
+      selection-color: #000000;
     }
 
-    .site-header {
-      background-color: var(--brand-dark);
-      color: #FFFFFF;
-      border-bottom: 3px solid var(--brand-yellow);
+    ::selection {
+      background: var(--brand-yellow);
+      color: #000000;
     }
 
-    .header-container {
-      max-width: 1040px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--container-max);
       margin: 0 auto;
-      padding: 18px 20px;
+      padding: 0 24px;
+    }
+
+    /* -------------------------------------------------------------
+       NAVIGATION BAR (APPLE GLASSMORPHISM)
+       ------------------------------------------------------------- */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition-standard);
+    }
+
+    .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      height: 72px;
+    }
+
+    .brand-logo-group {
+      display: flex;
+      align-items: center;
       gap: 12px;
     }
 
-    .brand-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: #FFFFFF;
-      font-weight: 800;
-      font-size: 1.35rem;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-badge {
-      background: linear-gradient(135deg, var(--brand-yellow), var(--brand-amber));
-      color: var(--brand-dark);
-      font-weight: 900;
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      border-radius: 999px;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
+    .brand-logo-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 214, 0, 0.3);
       display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: #000;
     }
 
-    .nav-links a {
-      color: #E4E4E7;
-      text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 8px;
-      transition: all 0.2s ease;
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .nav-links a:hover {
-      background-color: rgba(255, 255, 255, 0.08);
+    .brand-title span {
       color: var(--brand-yellow);
     }
 
-    .hero {
-      background: radial-gradient(circle at top right, #27272A 0%, #121212 65%);
-      color: #FFFFFF;
-      padding: 72px 20px 64px;
-      text-align: center;
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
     }
 
-    .hero-inner {
-      max-width: 820px;
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: var(--transition-standard);
+    }
+
+    .nav-link:hover {
+      color: #FFFFFF;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      transition: var(--transition-standard);
+      cursor: pointer;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand-yellow) 0%, var(--brand-amber) 100%);
+      color: #000000;
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(255, 214, 0, 0.22);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255, 214, 0, 0.35);
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.06);
+      color: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------------------------------------------
+       HERO SECTION (APPLE SCALE & LIGHTING)
+       ------------------------------------------------------------- */
+    .hero-section {
+      padding: 160px 0 100px;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-glow-bg {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(255, 214, 0, 0.12) 0%, rgba(242, 173, 13, 0.04) 45%, transparent 70%);
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
       margin: 0 auto;
     }
 
-    .hero-pill {
-      display: inline-block;
-      background-color: rgba(255, 214, 0, 0.14);
-      border: 1px solid rgba(255, 214, 0, 0.4);
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 214, 0, 0.08);
+      border: 1px solid rgba(255, 214, 0, 0.25);
       color: var(--brand-yellow);
       font-size: 0.82rem;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 999px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 18px;
+      letter-spacing: 0.05em;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
     }
 
-    .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3rem);
+    .pill-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand-yellow);
+      box-shadow: 0 0 8px var(--brand-yellow);
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5.2vw, 4.4rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
+
+    .hero-title .gradient-text {
+      background: linear-gradient(135deg, #FFFFFF 30%, var(--brand-yellow) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 36px;
+      line-height: 1.55;
+      font-weight: 400;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .hero-cta-group .btn {
+      padding: 14px 30px;
+      font-size: 1.02rem;
+    }
+
+    /* Social Proof Bar */
+    .metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 24px 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-sm);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .metric-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .metric-val {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+    }
+
+    .metric-val span {
+      color: var(--brand-yellow);
+    }
+
+    .metric-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    /* -------------------------------------------------------------
+       INTERACTIVE PERSONA SWITCHER (KIWIFY / APPLE TABS)
+       ------------------------------------------------------------- */
+    .section-spacing {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 60px;
+    }
+
+    .section-tag {
+      color: var(--brand-yellow);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.6vw, 3rem);
       font-weight: 800;
       letter-spacing: -0.03em;
       line-height: 1.15;
       margin-bottom: 16px;
     }
 
-    .hero h1 span {
-      color: var(--brand-yellow);
+    .section-desc {
+      font-size: 1.08rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
     }
 
-    .hero p {
-      color: #D4D4D8;
-      font-size: 1.1rem;
-      max-width: 680px;
-      margin: 0 auto 32px;
-    }
-
-    .cta-group {
+    .persona-tabs-wrapper {
       display: flex;
       justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
-    .btn-primary {
+    .persona-tabs {
+      display: inline-flex;
+      background: var(--bg-surface-elevated);
+      padding: 6px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .persona-tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 10px 28px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: var(--transition-standard);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .persona-tab-btn.active {
       background: linear-gradient(135deg, var(--brand-yellow), var(--brand-amber));
-      color: var(--brand-dark);
-      font-weight: 800;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-size: 0.98rem;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      color: #000000;
+      box-shadow: 0 4px 14px rgba(255, 214, 0, 0.25);
     }
 
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(255, 214, 0, 0.25);
+    .persona-panel {
+      display: none;
+      animation: fadeIn 0.35s ease forwards;
     }
 
-    .btn-secondary {
-      background-color: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #FFFFFF;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-size: 0.98rem;
-      transition: background-color 0.15s ease;
-    }
-
-    .btn-secondary:hover {
-      background-color: rgba(255, 255, 255, 0.14);
-    }
-
-    .main-container {
-      max-width: 1040px;
-      margin: 48px auto;
-      padding: 0 20px;
-      flex: 1;
-    }
-
-    .cards-grid {
+    .persona-panel.active {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .persona-card-visual {
+      background: radial-gradient(circle at center, rgba(255, 214, 0, 0.06), transparent 70%), var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .persona-card-visual img {
+      max-height: 420px;
+      margin: 0 auto;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6));
+    }
+
+    .persona-card-text {
+      display: flex;
+      flex-direction: column;
       gap: 24px;
     }
 
-    .info-card {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border-color);
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .feature-icon-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255, 214, 0, 0.1);
+      border: 1px solid rgba(255, 214, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand-yellow);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .feature-item p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       CATEGORIES SHOWCASE (FOOMY / APPLE GRID)
+       ------------------------------------------------------------- */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .category-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 28px;
-      box-shadow: var(--shadow-md);
+      padding: 24px 20px;
+      text-align: center;
+      transition: var(--transition-standard);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .category-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(255, 214, 0, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 214, 0, 0.1);
+    }
+
+    .category-icon-wrap {
+      width: 92px;
+      height: 92px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 10px;
+      transition: var(--transition-standard);
+    }
+
+    .category-card:hover .category-icon-wrap {
+      transform: scale(1.08);
+    }
+
+    .category-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .category-card p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* -------------------------------------------------------------
+       APPLE BENTO GRID (PRODUCT ARCHITECTURE)
+       ------------------------------------------------------------- */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+
+    .bento-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(20px);
+      transition: var(--transition-standard);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    .info-card h2 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-      color: var(--text-primary);
+    .bento-card:hover {
+      border-color: rgba(255, 214, 0, 0.3);
+      box-shadow: var(--shadow-card);
     }
 
-    .info-card p {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
+    .bento-col-8 { grid-column: span 8; }
+    .bento-col-4 { grid-column: span 4; }
+    .bento-col-6 { grid-column: span 6; }
+    .bento-col-12 { grid-column: span 12; }
 
-    .card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--brand-dark);
-      font-weight: 800;
-      text-decoration: none;
-      font-size: 0.95rem;
-      padding: 10px 16px;
-      background-color: var(--brand-yellow);
-      border-radius: 10px;
+    .bento-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--brand-yellow);
+      background: rgba(255, 214, 0, 0.1);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
       align-self: flex-start;
     }
 
-    .card-link:hover {
-      background-color: var(--brand-amber);
+    .bento-card h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      color: #FFFFFF;
     }
 
-    .site-footer {
-      background-color: var(--brand-dark);
-      color: #A1A1AA;
-      padding: 36px 20px;
-      border-top: 1px solid #27272A;
-      font-size: 0.9rem;
-      text-align: center;
+    .bento-card p {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
     }
 
-    .site-footer a {
+    .bento-highlight {
+      font-size: 2.2rem;
+      font-weight: 900;
       color: var(--brand-yellow);
-      text-decoration: none;
-      font-weight: 600;
-      margin: 0 10px;
+      letter-spacing: -0.03em;
+      margin-top: 18px;
+    }
+
+    /* -------------------------------------------------------------
+       STEP-BY-STEP (COMO FUNCIONA)
+       ------------------------------------------------------------- */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      position: relative;
+      transition: var(--transition-standard);
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 214, 0, 0.3);
+      box-shadow: var(--shadow-card);
+    }
+
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 214, 0, 0.12);
+      border: 1px solid var(--brand-yellow);
+      color: var(--brand-yellow);
+      font-size: 1.2rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .step-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+
+    .step-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* -------------------------------------------------------------
+       FAQ ACCORDION (SEO RICH SNIPPET READY)
+       ------------------------------------------------------------- */
+    .faq-container {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition-standard);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(255, 255, 255, 0.16);
+    }
+
+    .faq-question {
+      padding: 22px 26px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    .faq-icon {
+      font-size: 1.3rem;
+      color: var(--brand-yellow);
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      line-height: 1.6;
+      padding: 0 26px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 26px 22px;
+    }
+
+    /* -------------------------------------------------------------
+       DOWNLOAD BANNER (APPLE CTA)
+       ------------------------------------------------------------- */
+    .download-card {
+      background: radial-gradient(circle at top right, rgba(255, 214, 0, 0.15), transparent 60%), #141418;
+      border: 1px solid rgba(255, 214, 0, 0.3);
+      border-radius: var(--radius-xl);
+      padding: 60px 40px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 214, 0, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .download-card h2 {
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .download-card p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+
+    /* -------------------------------------------------------------
+       FOOTER (APPLE SITEMAP)
+       ------------------------------------------------------------- */
+    .site-footer {
+      background: #050506;
+      border-top: 1px solid var(--border-subtle);
+      padding: 80px 0 40px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      margin-top: 12px;
+      max-width: 320px;
+      line-height: 1.5;
+    }
+
+    .footer-col h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      color: var(--text-secondary);
+      transition: var(--transition-standard);
+    }
+
+    .footer-col a:hover {
+      color: var(--brand-yellow);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* -------------------------------------------------------------
+       RESPONSIVE DESIGN (MOBILE & TABLET)
+       ------------------------------------------------------------- */
+    @media (max-width: 992px) {
+      .persona-panel.active {
+        grid-template-columns: 1fr;
+      }
+      .bento-col-8, .bento-col-4, .bento-col-6 {
+        grid-column: span 12;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-menu {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-section {
+        padding: 130px 0 70px;
+      }
+      .download-card {
+        padding: 40px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">
-        <span>Bikkofy &amp; Bikkerfy</span>
-        <span class="brand-badge">Ecossistema</span>
+  <!-- =============================================================
+       SITE NAVIGATION BAR
+       ============================================================= -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo-group" aria-label="Bikko Início">
+        <div class="brand-logo-badge">
+          <img src="assets/icons/bikkofy_icon.webp" alt="Ícone Oficial Bikko" width="40" height="40" />
+        </div>
+        <span class="brand-title">Bikko<span>.</span></span>
       </a>
-      <nav class="nav-links" aria-label="Navegação principal">
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Uso</a>
-        <a href="privacidade.html#exclusao-de-conta">Exclusão de Conta</a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+          <li><a href="#solucoes" class="nav-link">Para Clientes</a></li>
+          <li><a href="#solucoes" class="nav-link">Para Prestadores</a></li>
+          <li><a href="#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
       </nav>
+
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary">Baixar App</a>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <span class="hero-pill">Bikkofy (Clientes) &amp; Bikkerfy (Profissionais)</span>
-      <h1>Serviços locais rápidos, seguros e com <span>transparência total</span>.</h1>
-      <p>
-        Conectamos clientes que precisam de soluções ágeis aos melhores prestadores de serviço independentes (Bikkers) da sua região, com negociação direta e avaliações reais.
-      </p>
-      <div class="cta-group">
-        <a href="privacidade.html" class="btn-primary">Ler Política de Privacidade</a>
-        <a href="termos.html" class="btn-secondary">Ler Termos e Condições de Uso</a>
+  <!-- =============================================================
+       HERO SECTION
+       ============================================================= -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-glow-bg"></div>
+      <div class="container hero-content">
+        <div class="pill-badge">
+          <span class="dot"></span>
+          <span>A Revolução dos Serviços Residenciais &amp; Bicos</span>
+        </div>
+
+        <h1 class="hero-title">
+          O profissional certo para sua casa.<br />
+          <span class="gradient-text">Rápido, verificado e direto.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A plataforma moderna que conecta você a diaristas, eletricistas, encanadores e montadores de confiança em minutos. Orçamentos com fotos em alta resolução, contrapropostas em tempo real e pagamento 100% direto sem taxas abusivas.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#download" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.597 1.597 0 0 1-.22-.38L1.08 12.822a1.6 1.6 0 0 1 0-1.644L3.39 2.195c.063-.139.136-.268.219-.381zm11.604 11.607l2.802 2.802-13.626 7.747 10.824-10.55zm0-2.842L4.39 0.03l13.625 7.746-2.802 2.803zm1.42 1.421l3.585-2.04c1.042-.593 1.042-1.558 0-2.152l-3.585-2.04-2.836 2.836 2.836 2.836z"/></svg>
+            Baixar Bikkofy (Cliente)
+          </a>
+          <a href="#solucoes" class="btn btn-glass">
+            Quero Trabalhar como Bikker
+          </a>
+        </div>
+
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <div class="metric-val">4.9<span>★</span></div>
+            <div class="metric-label">Avaliação dos Usuários</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">+30</div>
+            <div class="metric-label">Categorias Atendidas</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">0<span>%</span></div>
+            <div class="metric-label">Taxa Oculta no Pagamento</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">100<span>%</span></div>
+            <div class="metric-label">Conforme à LGPD</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <main class="main-container">
-    <div class="cards-grid">
-      <article class="info-card">
-        <div>
-          <h2>Política de Privacidade (LGPD)</h2>
-          <p>
-            Saiba como protegemos seus dados cadastrais, localização GPS, fotos de orçamentos e portfólio nos aplicativos <strong>Bikkofy</strong> e <strong>Bikkerfy</strong>, em conformidade com a Lei nº 13.709/2018.
+    <!-- =============================================================
+         INTERACTIVE PERSONA SECTION (CLIENTE VS PRESTADOR)
+         ============================================================= -->
+    <section id="solucoes" class="section-spacing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dois Aplicativos, Uma Só Solução</span>
+          <h2 class="section-title">Feito sob medida para quem precisa e para quem faz acontecer.</h2>
+          <p class="section-desc">
+            Seja você um cliente em busca de um conserto urgente ou um profissional querendo aumentar sua renda com total autonomia, o ecossistema Bikko entrega a melhor experiência.
           </p>
         </div>
-        <a href="privacidade.html" class="card-link">Acessar Política de Privacidade →</a>
-      </article>
 
-      <article class="info-card">
-        <div>
-          <h2>Termos e Condições de Uso</h2>
-          <p>
-            Conheça as regras de intermediação da plataforma, envio de orçamentos, rodadas de contrapropostas, pagamento realizado fora da plataforma e deveres da comunidade.
+        <div class="persona-tabs-wrapper">
+          <div class="persona-tabs" role="tablist">
+            <button class="persona-tab-btn active" id="tab-btn-client" role="tab" aria-selected="true" onclick="switchTab('client')">
+              Sou Cliente (Bikkofy)
+            </button>
+            <button class="persona-tab-btn" id="tab-btn-pro" role="tab" aria-selected="false" onclick="switchTab('pro')">
+              Sou Profissional (Bikkerfy)
+            </button>
+          </div>
+        </div>
+
+        <!-- Panel 1: Cliente -->
+        <div class="persona-panel active" id="panel-client" role="tabpanel">
+          <div class="persona-card-visual">
+            <img src="assets/images/onboarding_step1.webp" alt="Ilustração 3D da experiência Bikkofy para contratação de serviços" width="600" height="600" loading="lazy" />
+          </div>
+          <div class="persona-card-text">
+            <div class="feature-item">
+              <div class="feature-icon-circle">📸</div>
+              <div>
+                <h3>Orçamentos com Fotos Detalhadas</h3>
+                <p>Fotografe o vazamento, a tomada com defeito ou o móvel. O profissional visualiza o problema antes de dar o preço, evitando surpresas e retrabalho.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">⚖️</div>
+              <div>
+                <h3>Até 5 Rodadas de Contraproposta</h3>
+                <p>Negociação flexível em tempo real. Você propõe o valor que cabe no seu bolso e chega a um acordo justo diretamente com o prestador.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">💸</div>
+              <div>
+                <h3>Pagamento Direto ao Prestador</h3>
+                <p>Pague sem intermediários via Pix, dinheiro ou cartão após a conclusão do serviço. Sem retenção de fundos nem taxas extras embutidas no seu orçamento.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">⭐</div>
+              <div>
+                <h3>Avaliações 5 Estrelas Verificadas</h3>
+                <p>Consulte a pontuação histórica e os comentários reais de outros clientes antes de confirmar o chamado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Profissional -->
+        <div class="persona-panel" id="panel-pro" role="tabpanel">
+          <div class="persona-card-visual">
+            <img src="assets/images/onboarding_step2.webp" alt="Ilustração 3D da experiência Bikkerfy para profissionais e prestadores" width="600" height="600" loading="lazy" />
+          </div>
+          <div class="persona-card-text">
+            <div class="feature-item">
+              <div class="feature-icon-circle">📍</div>
+              <div>
+                <h3>Chamados Próximos por Geolocalização</h3>
+                <p>Economize tempo e combustível. Receba pedidos de orçamento de clientes que estão no seu bairro e na sua rota de atendimento.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">💰</div>
+              <div>
+                <h3>100% do Valor Fica com Você</h3>
+                <p>Não cobramos percentuais abusivos sobre o seu suor. O valor combinado é o valor que entra na sua conta, direto do cliente.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">🗂️</div>
+              <div>
+                <h3>Portfólio Oficial no Aplicativo</h3>
+                <p>Cadastre fotos reais dos seus serviços em categorias oficiais (alvenaria, hidráulica, elétrica, pintura) para conquistar a confiança dos clientes.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">🛡️</div>
+              <div>
+                <h3>Validade de 48 Horas por Proposta</h3>
+                <p>Sua agenda sob controle. Propostas expiram automaticamente após 48 horas se não houver resposta, liberando seu horário para novos clientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         POPULAR CATEGORIES (FOOMY 3D ICONS)
+         ============================================================= -->
+    <section id="categorias" class="section-spacing" style="background: rgba(14, 14, 18, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Especialidades Verificadas</span>
+          <h2 class="section-title">Encontre o especialista exato para sua necessidade.</h2>
+          <p class="section-desc">
+            Mais de 30 categorias de serviços residenciais, comerciais e manutenção preventiva à sua disposição.
           </p>
         </div>
-        <a href="termos.html" class="card-link">Acessar Termos de Uso →</a>
-      </article>
 
-      <article class="info-card">
-        <div>
-          <h2>Exclusão de Conta e Dados</h2>
-          <p>
-            Veja o passo a passo para excluir sua conta diretamente dentro do aplicativo (<code>Perfil &gt; Configurações &gt; Excluir minha conta</code>) ou solicitar a remoção por e-mail.
+        <div class="categories-grid">
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/01-eletricista.webp" alt="Ícone Eletricista Residencial" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Eletricista</h3>
+            <p>Fiação, quadros, tomadas, disjuntores e iluminação LED.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/02-encanador-hidraulica.webp" alt="Ícone Encanador e Hidráulica" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Encanador</h3>
+            <p>Vazamentos, torneiras, caixas d'água e tubulações.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/03-montador-de-moveis.webp" alt="Ícone Montador de Móveis" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Montador de Móveis</h3>
+            <p>Montagem, desmontagem, ajustes e fixação de painéis.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/04-marido-de-aluguel.webp" alt="Ícone Marido de Aluguel" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Marido de Aluguel</h3>
+            <p>Pequenos reparos, instalações de suportes e consertos gerais.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/05-ar-condicionado.webp" alt="Ícone Técnico de Ar-Condicionado" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Ar-Condicionado</h3>
+            <p>Instalação split, limpeza preventiva, carga de gás e manutenção.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/07-pintor-imovel.webp" alt="Ícone Pintor Residencial" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Pintor Residencial</h3>
+            <p>Pintura interna, fachadas, texturas e acabamento fino.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/08-pedreiro-reformas.webp" alt="Ícone Pedreiro e Reformas" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Pedreiro &amp; Reformas</h3>
+            <p>Alvenaria, pisos, revestimentos, reboco e quebra-quebra.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/15-diarista-limpeza.webp" alt="Ícone Diarista e Limpeza" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Diarista &amp; Limpeza</h3>
+            <p>Faxina residencial, pós-obra, limpeza pesada e comercial.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/16-jardineiro.webp" alt="Ícone Jardineiro e Paisagismo" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Jardineiro</h3>
+            <p>Poda de grama, corte de arbustos, paisagismo e adubação.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon-wrap">
+              <img src="assets/categories/21-tecnico-informatica.webp" alt="Ícone Suporte de TI e Informática" width="80" height="80" loading="lazy" />
+            </div>
+            <h3>Técnico de TI</h3>
+            <p>Configuração de Wi-Fi, notebooks, impressoras e formatação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         APPLE-STYLE BENTO GRID (DIFERENCIAIS)
+         ============================================================= -->
+    <section id="diferenciais" class="section-spacing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Diferenciais da Plataforma</span>
+          <h2 class="section-title">Construído com tecnologia de ponta e foco total em segurança.</h2>
+          <p class="section-desc">
+            Revolucionamos o mercado de prestação de serviços eliminando burocracias, taxas escondidas e retenções desnecessárias.
           </p>
         </div>
-        <a href="privacidade.html#exclusao-de-conta" class="card-link">Instruções de Exclusão →</a>
-      </article>
-    </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-col-8">
+            <div>
+              <span class="bento-badge">Transparência Visual</span>
+              <h3>Upload de Fotos em Alta Resolução via Cloudflare R2</h3>
+              <p>Envie até 5 fotos na criação da solicitação e até 10 fotos no ciclo de vida do chamado. O profissional vê exatamente o que precisa ser reparado e envia uma proposta realista, sem orçamentos no escuro.</p>
+            </div>
+            <div class="bento-highlight">Zero Surpresas na Visita</div>
+          </article>
+
+          <article class="bento-card bento-col-4">
+            <div>
+              <span class="bento-badge">Acordo Justo</span>
+              <h3>Até 5 Contrapropostas</h3>
+              <p>O cliente faz a oferta, o prestador propõe o ajuste e ambos chegam ao valor exato de mercado sem intermediários ditando regras.</p>
+            </div>
+            <div class="bento-highlight">5 Rodadas</div>
+          </article>
+
+          <article class="bento-card bento-col-4">
+            <div>
+              <span class="bento-badge">Economia Real</span>
+              <h3>Sem Taxas Abusivas</h3>
+              <p>O Bikko não cobra 20% a 30% como os apps tradicionais. O valor acordado entre cliente e prestador é pago diretamente entre as partes.</p>
+            </div>
+            <div class="bento-highlight">0% Comissão</div>
+          </article>
+
+          <article class="bento-card bento-col-8">
+            <div>
+              <span class="bento-badge">Privacidade &amp; LGPD</span>
+              <h3>Segurança com Exclusão em 1 Toque</h3>
+              <p>Total conformidade com a Lei nº 13.709/2018 (LGPD). Seus dados cadastrais, telefone e localização GPS são tratados com sigilo estrito e você tem autonomia total para excluir sua conta a qualquer momento direto pelo aplicativo.</p>
+            </div>
+            <div class="bento-highlight">100% Seguro &amp; Conforme</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         COMO FUNCIONA (PASSO A PASSO)
+         ============================================================= -->
+    <section id="como-funciona" class="section-spacing" style="background: rgba(14, 14, 18, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simples e Eficiente</span>
+          <h2 class="section-title">Como o Bikko funciona na prática.</h2>
+          <p class="section-desc">
+            Em apenas 3 passos simples, o conserto que você precisava está resolvido.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-num">1</div>
+            <h3>Descreva o Serviço</h3>
+            <p>Selecione a categoria desejada (ex: Eletricista, Encanador), digite uma descrição curta e anexe fotos do local ou equipamento com defeito.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">2</div>
+            <h3>Receba e Negocie Propostas</h3>
+            <p>Profissionais qualificados da sua região enviam valores em minutos. Você pode aceitar de imediato ou fazer contrapropostas em até 5 rodadas.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-num">3</div>
+            <h3>Serviço Concluído e Avaliado</h3>
+            <p>O prestador realiza o trabalho, você efetua o pagamento diretamente (Pix, dinheiro ou cartão) e ambos se avaliam no aplicativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         FAQ SECTION (ACORDEÃO E RICH SNIPPETS)
+         ============================================================= -->
+    <section id="faq" class="section-spacing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tire Suas Dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">
+            Tudo o que você precisa saber sobre o funcionamento do Bikkofy e do Bikkerfy.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Como funciona o pagamento pelo serviço no Bikko?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              O pagamento é combinado e realizado 100% diretamente entre o cliente e o profissional prestador (Bikker) via Pix, dinheiro ou cartão ao concluir o serviço. A plataforma Bikko não retém pagamentos nem cobra comissões abusivas sobre o valor combinado.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>É cobrada alguma taxa para solicitar orçamentos?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Não. Para o cliente, solicitar orçamentos no aplicativo Bikkofy é totalmente gratuito. Você pode descrever seu problema, anexar fotos e receber propostas de profissionais da sua região sem pagar nada por isso.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Como funciona a rodada de contrapropostas de preço?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              A plataforma permite até 5 rodadas de contrapropostas entre cliente e profissional. Isso garante uma negociação justa e transparente em tempo real, onde ambas as partes concordam com o preço final antes da confirmação do serviço.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Como me cadastrar para trabalhar e prestar serviços como Bikker?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Basta baixar o aplicativo Bikkerfy na Google Play Store, informar seu telefone com validação segura por SMS (OTP), CPF válido e selecionar suas categorias de atuação com fotos do seu portfólio de serviços.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Qual o prazo de validade das propostas de orçamento?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Cada proposta enviada tem validade de até 48 horas. Se o cliente ou o profissional não responder dentro deste período, a solicitação expira automaticamente, liberando a agenda do profissional para novos atendimentos.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Como o Bikko protege meus dados segundo a LGPD?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Cumprimos rigorosamente a Lei Geral de Proteção de Dados (LGPD). Seus dados são protegidos por criptografia e você tem controle total para editar ou excluir sua conta diretamente no aplicativo a qualquer momento em 1 clique (<code>Perfil &gt; Configurações &gt; Excluir Conta</code>).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         DOWNLOAD CALL TO ACTION BANNER (APPLE STYLE)
+         ============================================================= -->
+    <section id="download" class="section-spacing">
+      <div class="container">
+        <div class="download-card">
+          <h2>Pronto para resolver seus serviços com agilidade?</h2>
+          <p>
+            Baixe agora o aplicativo oficial na Google Play Store e experimente a nova era dos serviços locais sob demanda.
+          </p>
+          <div class="hero-cta-group" style="margin-bottom: 0;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.bikkofy.bikko" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Baixar Bikkofy para Clientes
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=br.com.bikkofy.bikker" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+              Baixar Bikkerfy para Profissionais
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- =============================================================
+       SITE FOOTER
+       ============================================================= -->
   <footer class="site-footer">
-    <p style="margin-bottom: 10px;">
-      <a href="privacidade.html">Política de Privacidade</a> |
-      <a href="termos.html">Termos de Uso</a> |
-      <a href="privacidade.html#exclusao-de-conta">Exclusão de Conta</a>
-    </p>
-    <p>© 2026 Bikkofy &amp; Bikkerfy. Todos os direitos reservados.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo-group">
+            <div class="brand-logo-badge">
+              <img src="assets/icons/bikkofy_icon.webp" alt="Logo Bikko" width="40" height="40" />
+            </div>
+            <span class="brand-title">Bikko<span>.</span></span>
+          </a>
+          <p>
+            Plataforma inteligente de serviços locais e bicos rápidos. Conectando pessoas e oportunidades com segurança, transparência e velocidade.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ecossistema</h4>
+          <ul>
+            <li><a href="#solucoes">Bikkofy para Clientes</a></li>
+            <li><a href="#solucoes">Bikkerfy para Prestadores</a></li>
+            <li><a href="#categorias">Categorias de Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais e Tecnologia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Transparência &amp; Legal</h4>
+          <ul>
+            <li><a href="privacidade.html">Política de Privacidade (LGPD)</a></li>
+            <li><a href="termos.html">Termos e Condições de Uso</a></li>
+            <li><a href="privacidade.html#exclusao-de-conta">Exclusão de Conta e Dados</a></li>
+            <li><a href="mailto:contato@bikkofy.com.br">Canal do Encarregado (DPO)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ajuda &amp; Contato</h4>
+          <ul>
+            <li><a href="#faq">Perguntas Frequentes (FAQ)</a></li>
+            <li><a href="mailto:contato@bikkofy.com.br">contato@bikkofy.com.br</a></li>
+            <li><a href="https://github.com/emersonfiwre/bikkoweb" target="_blank" rel="noopener noreferrer">Repositório Oficial no GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bikko Tecnologia. Todos os direitos reservados. CNPJ sob consulta.</p>
+        <p>Bikkofy (`br.com.bikkofy.bikko`) &amp; Bikkerfy (`br.com.bikkofy.bikker`)</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- =============================================================
+       LIGHTWEIGHT VANILLA JAVASCRIPT (TABS & ACCORDION)
+       ============================================================= -->
+  <script>
+    function switchTab(persona) {
+      const clientBtn = document.getElementById('tab-btn-client');
+      const proBtn = document.getElementById('tab-btn-pro');
+      const clientPanel = document.getElementById('panel-client');
+      const proPanel = document.getElementById('panel-pro');
+
+      if (persona === 'client') {
+        clientBtn.classList.add('active');
+        clientBtn.setAttribute('aria-selected', 'true');
+        proBtn.classList.remove('active');
+        proBtn.setAttribute('aria-selected', 'false');
+
+        clientPanel.classList.add('active');
+        proPanel.classList.remove('active');
+      } else {
+        proBtn.classList.add('active');
+        proBtn.setAttribute('aria-selected', 'true');
+        clientBtn.classList.remove('active');
+        clientBtn.setAttribute('aria-selected', 'false');
+
+        proPanel.classList.add('active');
+        clientPanel.classList.remove('active');
+      }
+    }
+
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const isOpen = item.classList.contains('open');
+
+      // Fechar outros itens abertos para manter visual limpo (estilo Apple)
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('open');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+  </script>
 </body>
 </html>
