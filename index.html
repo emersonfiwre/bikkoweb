@@ -345,6 +345,96 @@
       transform: translateY(-2px);
     }
 
+    /* Google Play Store Badge Button */
+    .btn-playstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 14px;
+      padding: 10px 22px;
+      text-decoration: none;
+      transition: var(--transition-standard);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .btn-playstore:hover {
+      transform: translateY(-3px);
+      border-color: var(--brand-yellow);
+      box-shadow: 0 8px 24px rgba(255, 214, 0, 0.3), 0 0 15px rgba(255, 214, 0, 0.15);
+      background: #0D0D11;
+    }
+
+    .play-svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+
+    .playstore-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .playstore-sub {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.1;
+    }
+
+    .playstore-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .playstore-app {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--brand-yellow);
+      line-height: 1.1;
+      margin-top: 2px;
+    }
+
+    /* Floating Toast Notice (Apple Style) */
+    .toast-notice {
+      position: fixed;
+      top: 88px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-25px);
+      background: rgba(18, 18, 22, 0.94);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--brand-yellow);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 214, 0, 0.25);
+      color: #FFFFFF;
+      padding: 14px 26px;
+      border-radius: var(--radius-full);
+      font-size: 0.94rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .toast-notice.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
     /* -------------------------------------------------------------
        HERO SECTION (APPLE SCALE & LIGHTING)
        ------------------------------------------------------------- */
@@ -1043,12 +1133,32 @@
         </p>
 
         <div class="hero-cta-group">
-          <a href="#download" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.597 1.597 0 0 1-.22-.38L1.08 12.822a1.6 1.6 0 0 1 0-1.644L3.39 2.195c.063-.139.136-.268.219-.381zm11.604 11.607l2.802 2.802-13.626 7.747 10.824-10.55zm0-2.842L4.39 0.03l13.625 7.746-2.802 2.803zm1.42 1.421l3.585-2.04c1.042-.593 1.042-1.558 0-2.152l-3.585-2.04-2.836 2.836 2.836 2.836z"/></svg>
-            Baixar Bikkofy (Cliente)
+          <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
+            <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+              <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+              <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+              <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+            </svg>
+            <div class="playstore-text">
+              <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+              <span class="playstore-title">Google Play</span>
+              <span class="playstore-app">Bikkofy (Clientes)</span>
+            </div>
           </a>
-          <a href="#solucoes" class="btn btn-glass">
-            Quero Trabalhar como Bikker
+
+          <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkerfy')" aria-label="Baixar Bikkerfy no Google Play">
+            <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+              <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+              <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+              <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+            </svg>
+            <div class="playstore-text">
+              <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+              <span class="playstore-title">Google Play</span>
+              <span class="playstore-app">Bikkerfy (Profissionais)</span>
+            </div>
           </a>
         </div>
 
@@ -1134,6 +1244,22 @@
                 <p>Consulte a pontuação histórica e os comentários reais de outros clientes antes de confirmar o chamado.</p>
               </div>
             </div>
+
+            <div style="margin-top: 8px;">
+              <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
+                <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+                  <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+                  <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+                  <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+                </svg>
+                <div class="playstore-text">
+                  <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+                  <span class="playstore-title">Google Play</span>
+                  <span class="playstore-app">Bikkofy para Clientes</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1173,6 +1299,22 @@
                 <h3>Validade de 48 Horas por Proposta</h3>
                 <p>Sua agenda sob controle. Propostas expiram automaticamente após 48 horas se não houver resposta, liberando seu horário para novos clientes.</p>
               </div>
+            </div>
+
+            <div style="margin-top: 8px;">
+              <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkerfy')" aria-label="Baixar Bikkerfy no Google Play">
+                <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+                  <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+                  <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+                  <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+                </svg>
+                <div class="playstore-text">
+                  <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+                  <span class="playstore-title">Google Play</span>
+                  <span class="playstore-app">Bikkerfy para Prestadores</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1453,11 +1595,32 @@
             Baixe agora o aplicativo oficial na Google Play Store e experimente a nova era dos serviços locais sob demanda.
           </p>
           <div class="hero-cta-group" style="margin-bottom: 0;">
-            <a href="https://play.google.com/store/apps/details?id=br.com.bikkofy.bikko" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              Baixar Bikkofy para Clientes
+            <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
+              <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+                <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+                <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+                <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+              </svg>
+              <div class="playstore-text">
+                <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+                <span class="playstore-title">Google Play</span>
+                <span class="playstore-app">Bikkofy para Clientes</span>
+              </div>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=br.com.bikkofy.bikker" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
-              Baixar Bikkerfy para Profissionais
+
+            <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkerfy')" aria-label="Baixar Bikkerfy no Google Play">
+              <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+                <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+                <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+                <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+              </svg>
+              <div class="playstore-text">
+                <span class="playstore-sub">DISPONÍVEL EM BREVE NO</span>
+                <span class="playstore-title">Google Play</span>
+                <span class="playstore-app">Bikkerfy para Prestadores</span>
+              </div>
             </a>
           </div>
         </div>
@@ -1562,6 +1725,28 @@
         item.classList.add('open');
       }
     }
+
+    function handlePlayStoreClick(event, appName) {
+      if (event) {
+        event.preventDefault();
+      }
+      const toast = document.getElementById('playstore-toast');
+      const toastMessage = document.getElementById('toast-message');
+      if (toast && toastMessage) {
+        toastMessage.innerHTML = `🚀 O aplicativo <strong>${appName}</strong> estará disponível na <strong>Google Play Store</strong> em breve!`;
+        toast.classList.add('show');
+        clearTimeout(window.playToastTimeout);
+        window.playToastTimeout = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 4000);
+      }
+    }
   </script>
+
+  <!-- Floating Toast Notification -->
+  <div id="playstore-toast" class="toast-notice" role="alert" aria-live="assertive">
+    <span style="font-size: 1.3rem;">📱</span>
+    <span id="toast-message">O aplicativo estará disponível na Google Play Store em breve!</span>
+  </div>
 </body>
 </html>
