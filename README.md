@@ -11,7 +11,7 @@ Repositório estático oficial (HTML5 + CSS3 puro, zero dependências externas) 
 | `index.html` | Portal institucional (preparado para receber a futura Landing Page comercial) | `https://<seu-dominio>/` |
 | `privacidade.html` | **Política de Privacidade Oficial** (100% compatível com LGPD e Google Play User Data Policy) | `https://<seu-dominio>/privacidade.html` |
 | `privacidade.html#exclusao-de-conta` | Seção dedicada à **Exclusão de Conta e Dados** (in-app e via web/e-mail) | `https://<seu-dominio>/privacidade.html#exclusao-de-conta` |
-| `termos.html` | **Termos e Condições Gerais de Uso** (Intermediação, Contrapropostas e Pagamento Direto) | `https://<seu-dominio>/termos.html` |
+| `termos.html` | **Termos e Condições Gerais de Uso** (Intermediação, Contrapropostas e Pagamento Fora da Plataforma) | `https://<seu-dominio>/termos.html` |
 
 ---
 
