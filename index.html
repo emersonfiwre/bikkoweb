@@ -17,7 +17,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bikkofy.com.br/" />
   <meta property="og:title" content="Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos" />
-  <meta property="og:description" content="Encontre profissionais verificados para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento 100% direto sem taxas abusivas." />
+  <meta property="og:description" content="Encontre profissionais autônomos para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento 100% direto sem taxas abusivas." />
   <meta property="og:image" content="https://bikkofy.com.br/assets/icons/bikkofy_icon.webp" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Bikko" />
@@ -26,18 +26,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://bikkofy.com.br/" />
   <meta name="twitter:title" content="Bikko: Aplicativo de Serviços Residenciais e Bicos Rápidos" />
-  <meta name="twitter:description" content="Encontre profissionais verificados para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento direto." />
+  <meta name="twitter:description" content="Encontre profissionais autônomos para serviços rápidos em casa. Orçamentos com fotos, contrapropostas em tempo real e pagamento direto." />
   <meta name="twitter:image" content="https://bikkofy.com.br/assets/icons/bikkofy_icon.webp" />
 
   <!-- Favicon & Mobile Theme -->
   <link rel="icon" type="image/webp" href="assets/icons/bikkofy_icon.webp" />
-  <meta name="theme-color" content="#08080A" />
+  <meta name="theme-color" content="#060608" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter & JetBrains Mono for subtle technical details -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Structured Data: JSON-LD (Schema.org Organization, SoftwareApplication & FAQPage) -->
   <script type="application/ld+json">
@@ -53,6 +53,12 @@
         "sameAs": [
           "https://github.com/emersonfiwre/bikkoweb"
         ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@bikkofy.com.br",
+          "contactType": "customer service",
+          "availableLanguage": "Portuguese"
+        },
         "description": "Plataforma de intermediação de serviços locais e bicos que conecta clientes (Bikkofy) e profissionais autônomos (Bikkerfy)."
       },
       {
@@ -145,15 +151,17 @@
 
   <style>
     /* -------------------------------------------------------------
-       APPLE-INSPIRED DESIGN SYSTEM TOKENS & RESET
+       AWWWARDS-TIER DESIGN SYSTEM & TOKENS
+       Crafted with Obsidian Black, Micro-Glows and Precision Typography
        ------------------------------------------------------------- */
     :root {
-      --bg-dark: #08080A;
-      --bg-surface: #121215;
-      --bg-surface-elevated: #18181D;
-      --bg-card: rgba(24, 24, 29, 0.75);
-      --bg-card-hover: rgba(32, 32, 39, 0.85);
-      --bg-glass: rgba(14, 14, 18, 0.72);
+      --bg-dark: #060608;
+      --bg-subtle: #0B0B0E;
+      --bg-surface: #111116;
+      --bg-surface-elevated: #16161D;
+      --bg-card: rgba(18, 18, 24, 0.65);
+      --bg-card-hover: rgba(26, 26, 34, 0.75);
+      --bg-glass: rgba(10, 10, 14, 0.78);
 
       --brand-yellow: #FFD600;
       --brand-amber: #F2AD0D;
@@ -161,12 +169,17 @@
       --brand-glow-subtle: rgba(255, 214, 0, 0.08);
 
       --text-primary: #FFFFFF;
-      --text-secondary: #A1A1AA;
-      --text-muted: #71717A;
+      --text-secondary: #9E9EA7;
+      --text-muted: #666672;
+      --text-subtle: #454550;
 
-      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-subtle: rgba(255, 255, 255, 0.07);
+      --border-card: rgba(255, 255, 255, 0.09);
       --border-focus: rgba(255, 214, 0, 0.45);
-      --border-card: rgba(255, 255, 255, 0.06);
+      --border-active: rgba(255, 214, 0, 0.6);
+
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
 
       --radius-sm: 8px;
       --radius-md: 14px;
@@ -175,11 +188,12 @@
       --radius-full: 9999px;
 
       --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
-      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-      --shadow-glow: 0 0 35px rgba(255, 214, 0, 0.18);
+      --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+      --shadow-glow: 0 0 40px rgba(255, 214, 0, 0.2);
 
-      --container-max: 1200px;
-      --transition-standard: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1220px;
+      --transition-standard: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -194,14 +208,28 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      font-family: var(--font-sans);
       background-color: var(--bg-dark);
       color: var(--text-primary);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
-      selection-background-color: var(--brand-yellow);
-      selection-color: #000000;
+      position: relative;
+    }
+
+    /* Subtle Film Grain Texture Overlay for Awwwards Aesthetic */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     }
 
     ::selection {
@@ -223,11 +251,19 @@
     .container {
       max-width: var(--container-max);
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 28px;
+    }
+
+    .mono-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand-yellow);
     }
 
     /* -------------------------------------------------------------
-       NAVIGATION BAR (APPLE GLASSMORPHISM)
+       SITE NAVIGATION (FROSTED GLASS WITH LIVE STATUS)
        ------------------------------------------------------------- */
     .site-nav {
       position: fixed;
@@ -236,8 +272,8 @@
       right: 0;
       z-index: 1000;
       background: var(--bg-glass);
-      backdrop-filter: blur(24px) saturate(180%);
-      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
       border-bottom: 1px solid var(--border-subtle);
       transition: var(--transition-standard);
     }
@@ -246,7 +282,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 72px;
+      height: 76px;
     }
 
     .brand-logo-group {
@@ -256,26 +292,33 @@
     }
 
     .brand-logo-badge {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 214, 0, 0.3);
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 214, 0, 0.35);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #000;
+      background: #000000;
+      transition: var(--transition-standard);
+    }
+
+    .brand-logo-group:hover .brand-logo-badge {
+      border-color: var(--brand-yellow);
+      transform: scale(1.04);
+      box-shadow: 0 0 20px rgba(255, 214, 0, 0.3);
     }
 
     .brand-title {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.035em;
       color: #FFFFFF;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
     }
 
     .brand-title span {
@@ -285,7 +328,7 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 32px;
       list-style: none;
     }
 
@@ -294,78 +337,181 @@
       font-weight: 500;
       color: var(--text-secondary);
       transition: var(--transition-standard);
+      position: relative;
     }
 
     .nav-link:hover {
       color: #FFFFFF;
     }
 
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--brand-yellow);
+      transition: width 0.25s ease;
+      border-radius: var(--radius-full);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 16px;
     }
 
-    .btn {
+    .live-status-pill {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
-      font-weight: 600;
-      font-size: 0.92rem;
-      padding: 10px 18px;
+      padding: 6px 14px;
       border-radius: var(--radius-full);
-      transition: var(--transition-standard);
-      cursor: pointer;
-      border: 1px solid transparent;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--brand-yellow) 0%, var(--brand-amber) 100%);
-      color: #000000;
-      font-weight: 700;
-      box-shadow: 0 4px 16px rgba(255, 214, 0, 0.22);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(255, 214, 0, 0.35);
-    }
-
-    .btn-glass {
-      background: rgba(255, 255, 255, 0.06);
-      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--text-secondary);
     }
 
-    .btn-glass:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.2);
-      transform: translateY(-2px);
+    .beacon-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #00E676;
+      box-shadow: 0 0 10px #00E676;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.6; }
+    }
+
+    /* -------------------------------------------------------------
+       HERO SECTION (EDITORIAL & ATMOSPHERIC)
+       ------------------------------------------------------------- */
+    .hero-section {
+      padding: 170px 0 110px;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-glow-bg {
+      position: absolute;
+      top: -140px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 550px;
+      background: radial-gradient(ellipse at center, rgba(255, 214, 0, 0.12) 0%, rgba(242, 173, 13, 0.03) 50%, transparent 70%);
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 214, 0, 0.07);
+      border: 1px solid rgba(255, 214, 0, 0.28);
+      color: var(--brand-yellow);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 7px 18px;
+      border-radius: var(--radius-full);
+      margin-bottom: 28px;
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-title {
+      font-size: clamp(2.7rem, 5.8vw, 4.8rem);
+      font-weight: 900;
+      letter-spacing: -0.045em;
+      line-height: 1.06;
+      margin-bottom: 26px;
+      color: #FFFFFF;
+    }
+
+    .hero-title .serif-italic {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--brand-yellow);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.28rem);
+      color: var(--text-secondary);
+      max-width: 740px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+      font-weight: 400;
     }
 
     /* Google Play Store Badge Button */
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+
     .btn-playstore {
       display: inline-flex;
       align-items: center;
       gap: 14px;
-      background: #000000;
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      border-radius: 14px;
-      padding: 10px 22px;
+      background: #08080B;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 16px;
+      padding: 12px 24px;
       text-decoration: none;
       transition: var(--transition-standard);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
       cursor: pointer;
       text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-playstore::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 214, 0, 0.08), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .btn-playstore:hover::before {
+      left: 100%;
     }
 
     .btn-playstore:hover {
       transform: translateY(-3px);
       border-color: var(--brand-yellow);
-      box-shadow: 0 8px 24px rgba(255, 214, 0, 0.3), 0 0 15px rgba(255, 214, 0, 0.15);
-      background: #0D0D11;
+      box-shadow: 0 10px 30px rgba(255, 214, 0, 0.28), 0 0 15px rgba(255, 214, 0, 0.15);
+      background: #101015;
     }
 
     .play-svg {
@@ -389,11 +535,11 @@
     }
 
     .playstore-title {
-      font-size: 1.18rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #FFFFFF;
       letter-spacing: -0.02em;
-      line-height: 1.25;
+      line-height: 1.2;
     }
 
     .playstore-app {
@@ -407,7 +553,7 @@
     /* Floating Toast Notice (Apple Style) */
     .toast-notice {
       position: fixed;
-      top: 88px;
+      top: 92px;
       left: 50%;
       transform: translateX(-50%) translateY(-25px);
       background: rgba(18, 18, 22, 0.94);
@@ -435,111 +581,18 @@
       pointer-events: auto;
     }
 
-    /* -------------------------------------------------------------
-       HERO SECTION (APPLE SCALE & LIGHTING)
-       ------------------------------------------------------------- */
-    .hero-section {
-      padding: 160px 0 100px;
-      position: relative;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .hero-glow-bg {
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 800px;
-      height: 500px;
-      background: radial-gradient(ellipse, rgba(255, 214, 0, 0.12) 0%, rgba(242, 173, 13, 0.04) 45%, transparent 70%);
-      filter: blur(60px);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 214, 0, 0.08);
-      border: 1px solid rgba(255, 214, 0, 0.25);
-      color: var(--brand-yellow);
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 6px 16px;
-      border-radius: var(--radius-full);
-      margin-bottom: 24px;
-      backdrop-filter: blur(10px);
-    }
-
-    .pill-badge .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--brand-yellow);
-      box-shadow: 0 0 8px var(--brand-yellow);
-    }
-
-    .hero-title {
-      font-size: clamp(2.5rem, 5.2vw, 4.4rem);
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      line-height: 1.08;
-      margin-bottom: 24px;
-      color: #FFFFFF;
-    }
-
-    .hero-title .gradient-text {
-      background: linear-gradient(135deg, #FFFFFF 30%, var(--brand-yellow) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      color: var(--text-secondary);
-      max-width: 720px;
-      margin: 0 auto 36px;
-      line-height: 1.55;
-      font-weight: 400;
-    }
-
-    .hero-cta-group {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 56px;
-    }
-
-    .hero-cta-group .btn {
-      padding: 14px 30px;
-      font-size: 1.02rem;
-    }
-
     /* Social Proof Bar */
     .metrics-strip {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
-      padding: 24px 32px;
+      padding: 24px 36px;
       background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      backdrop-filter: blur(20px);
-      box-shadow: var(--shadow-sm);
-      max-width: 960px;
+      backdrop-filter: blur(24px);
+      box-shadow: var(--shadow-card);
+      max-width: 980px;
       margin: 0 auto;
     }
 
@@ -551,10 +604,10 @@
     }
 
     .metric-val {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 800;
       color: #FFFFFF;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
     }
 
     .metric-val span {
@@ -562,55 +615,198 @@
     }
 
     .metric-label {
-      font-size: 0.82rem;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
       color: var(--text-muted);
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      font-weight: 600;
+      letter-spacing: 0.08em;
     }
 
     /* -------------------------------------------------------------
-       INTERACTIVE PERSONA SWITCHER (KIWIFY / APPLE TABS)
+       INTERACTIVE LIVE NEGOTIATION SIMULATOR
+       (AWWWARDS SIGNATURE FEATURE COMPONENT)
+       ------------------------------------------------------------- */
+    .simulator-wrapper {
+      max-width: 980px;
+      margin: 64px auto 0;
+      background: radial-gradient(circle at top left, rgba(255, 214, 0, 0.05), transparent 60%), #0D0D12;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-xl);
+      padding: 36px 40px;
+      box-shadow: var(--shadow-card);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .simulator-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .simulator-title-group h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+
+    .simulator-title-group p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .sim-rounds-badge {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      background: rgba(255, 214, 0, 0.1);
+      border: 1px solid rgba(255, 214, 0, 0.3);
+      color: var(--brand-yellow);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+
+    .sim-dialogue {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .sim-bubble {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      max-width: 85%;
+      padding: 16px 20px;
+      border-radius: var(--radius-lg);
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    .sim-bubble-client {
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      border-bottom-left-radius: 4px;
+    }
+
+    .sim-bubble-bikker {
+      align-self: flex-end;
+      background: rgba(255, 214, 0, 0.08);
+      border: 1px solid rgba(255, 214, 0, 0.25);
+      border-bottom-right-radius: 4px;
+      color: #FFFFFF;
+    }
+
+    .bubble-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    .avatar-client { background: #27272A; color: #FFF; }
+    .avatar-bikker { background: var(--brand-yellow); color: #000; }
+
+    .bubble-meta {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .sim-tag-price {
+      display: inline-block;
+      font-weight: 800;
+      color: var(--brand-yellow);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .sim-footer-deal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 230, 118, 0.06);
+      border: 1px solid rgba(0, 230, 118, 0.25);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      color: #E4E4E7;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .deal-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #00E676;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION SYSTEM & HEADINGS
        ------------------------------------------------------------- */
     .section-spacing {
-      padding: 110px 0;
+      padding: 120px 0;
       position: relative;
     }
 
     .section-header {
       text-align: center;
-      max-width: 760px;
-      margin: 0 auto 60px;
+      max-width: 780px;
+      margin: 0 auto 64px;
     }
 
     .section-tag {
+      font-family: var(--font-mono);
       color: var(--brand-yellow);
-      font-size: 0.85rem;
-      font-weight: 700;
+      font-size: 0.78rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 12px;
-      display: block;
+      letter-spacing: 0.12em;
+      margin-bottom: 14px;
+      display: inline-block;
     }
 
     .section-title {
-      font-size: clamp(2rem, 3.6vw, 3rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 16px;
+      font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.14;
+      margin-bottom: 18px;
     }
 
     .section-desc {
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       color: var(--text-secondary);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
+    /* -------------------------------------------------------------
+       PERSONA SWITCHER (APPLE HIGH-CONTRAST TABS)
+       ------------------------------------------------------------- */
     .persona-tabs-wrapper {
       display: flex;
       justify-content: center;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
 
     .persona-tabs {
@@ -618,7 +814,8 @@
       background: var(--bg-surface-elevated);
       padding: 6px;
       border-radius: var(--radius-full);
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border-card);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
 
     .persona-tab-btn {
@@ -627,7 +824,7 @@
       color: var(--text-secondary);
       font-size: 0.95rem;
       font-weight: 600;
-      padding: 10px 28px;
+      padding: 12px 32px;
       border-radius: var(--radius-full);
       cursor: pointer;
       transition: var(--transition-standard);
@@ -639,67 +836,81 @@
     .persona-tab-btn.active {
       background: linear-gradient(135deg, var(--brand-yellow), var(--brand-amber));
       color: #000000;
-      box-shadow: 0 4px 14px rgba(255, 214, 0, 0.25);
+      font-weight: 700;
+      box-shadow: 0 4px 18px rgba(255, 214, 0, 0.3);
     }
 
     .persona-panel {
       display: none;
-      animation: fadeIn 0.35s ease forwards;
+      animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     .persona-panel.active {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 48px;
       align-items: center;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(12px); }
+      from { opacity: 0; transform: translateY(16px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     .persona-card-visual {
-      background: radial-gradient(circle at center, rgba(255, 214, 0, 0.06), transparent 70%), var(--bg-card);
-      border: 1px solid var(--border-subtle);
+      background: radial-gradient(circle at 50% 30%, rgba(255, 214, 0, 0.08), transparent 70%), var(--bg-card);
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-xl);
-      padding: 40px;
+      padding: 48px 36px;
       text-align: center;
       box-shadow: var(--shadow-card);
       position: relative;
     }
 
     .persona-card-visual img {
-      max-height: 420px;
+      max-height: 440px;
       margin: 0 auto;
       object-fit: contain;
-      filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6));
+      filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.8));
+      transition: transform 0.5s ease;
+    }
+
+    .persona-card-visual:hover img {
+      transform: scale(1.02);
     }
 
     .persona-card-text {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 26px;
     }
 
     .feature-item {
       display: flex;
       align-items: flex-start;
-      gap: 16px;
+      gap: 18px;
     }
 
-    .feature-icon-circle {
-      width: 44px;
-      height: 44px;
+    /* Handcrafted Vector Icon Frames (No Emojis) */
+    .feature-icon-frame {
+      width: 46px;
+      height: 46px;
       border-radius: 12px;
-      background: rgba(255, 214, 0, 0.1);
-      border: 1px solid rgba(255, 214, 0, 0.3);
+      background: rgba(255, 214, 0, 0.08);
+      border: 1px solid rgba(255, 214, 0, 0.28);
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--brand-yellow);
-      font-size: 1.25rem;
       flex-shrink: 0;
+      transition: var(--transition-standard);
+    }
+
+    .feature-item:hover .feature-icon-frame {
+      border-color: var(--brand-yellow);
+      background: rgba(255, 214, 0, 0.16);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(255, 214, 0, 0.2);
     }
 
     .feature-item h3 {
@@ -707,28 +918,29 @@
       font-weight: 700;
       color: #FFFFFF;
       margin-bottom: 4px;
+      letter-spacing: -0.015em;
     }
 
     .feature-item p {
       color: var(--text-secondary);
       font-size: 0.95rem;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     /* -------------------------------------------------------------
-       CATEGORIES SHOWCASE (FOOMY / APPLE GRID)
+       CATEGORIES GRID (AWWWARDS CARDS WITH MONO INDEXING)
        ------------------------------------------------------------- */
     .categories-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 22px;
     }
 
     .category-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 24px 20px;
+      padding: 26px 20px;
       text-align: center;
       transition: var(--transition-standard);
       position: relative;
@@ -738,45 +950,70 @@
       align-items: center;
     }
 
+    .category-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 0%, rgba(255, 214, 0, 0.1), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
     .category-card:hover {
       background: var(--bg-card-hover);
       border-color: rgba(255, 214, 0, 0.35);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 214, 0, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(255, 214, 0, 0.12);
+    }
+
+    .category-card:hover::before {
+      opacity: 1;
+    }
+
+    .category-mono-tag {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      align-self: flex-start;
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
     }
 
     .category-icon-wrap {
-      width: 92px;
-      height: 92px;
+      width: 90px;
+      height: 90px;
       margin-bottom: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 8px;
       transition: var(--transition-standard);
     }
 
     .category-card:hover .category-icon-wrap {
       transform: scale(1.08);
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
     }
 
     .category-card h3 {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       font-weight: 700;
       color: #FFFFFF;
       margin-bottom: 6px;
+      letter-spacing: -0.01em;
     }
 
     .category-card p {
-      font-size: 0.82rem;
+      font-size: 0.83rem;
       color: var(--text-muted);
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     /* -------------------------------------------------------------
-       APPLE BENTO GRID (PRODUCT ARCHITECTURE)
+       BENTO GRID (ASYMMETRIC PRODUCT ARCHITECTURE)
        ------------------------------------------------------------- */
     .bento-grid {
       display: grid;
@@ -788,7 +1025,7 @@
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-xl);
-      padding: 36px;
+      padding: 40px;
       position: relative;
       overflow: hidden;
       backdrop-filter: blur(20px);
@@ -799,8 +1036,9 @@
     }
 
     .bento-card:hover {
-      border-color: rgba(255, 214, 0, 0.3);
+      border-color: rgba(255, 214, 0, 0.35);
       box-shadow: var(--shadow-card);
+      background: var(--bg-card-hover);
     }
 
     .bento-col-8 { grid-column: span 8; }
@@ -808,40 +1046,75 @@
     .bento-col-6 { grid-column: span 6; }
     .bento-col-12 { grid-column: span 12; }
 
+    .bento-badge-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
     .bento-badge {
       display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
       color: var(--brand-yellow);
-      background: rgba(255, 214, 0, 0.1);
+      background: rgba(255, 214, 0, 0.08);
+      border: 1px solid rgba(255, 214, 0, 0.25);
       padding: 4px 12px;
       border-radius: var(--radius-full);
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 16px;
-      align-self: flex-start;
+      letter-spacing: 0.08em;
     }
 
     .bento-card h3 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 12px;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
       color: #FFFFFF;
     }
 
     .bento-card p {
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: var(--text-secondary);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     .bento-highlight {
       font-size: 2.2rem;
       font-weight: 900;
       color: var(--brand-yellow);
-      letter-spacing: -0.03em;
-      margin-top: 18px;
+      letter-spacing: -0.035em;
+      margin-top: 24px;
+    }
+
+    /* Comparison Bar inside Bento */
+    .comparison-strip {
+      display: flex;
+      gap: 16px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .comp-pill {
+      flex: 1;
+      min-width: 130px;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+    }
+
+    .comp-others {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .comp-bikko {
+      background: rgba(255, 214, 0, 0.08);
+      border: 1px solid var(--brand-yellow);
+      color: #FFFFFF;
     }
 
     /* -------------------------------------------------------------
@@ -850,58 +1123,63 @@
     .steps-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      position: relative;
+      gap: 26px;
     }
 
     .step-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 36px 28px;
+      padding: 40px 32px;
       position: relative;
       transition: var(--transition-standard);
     }
 
     .step-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(255, 214, 0, 0.3);
+      transform: translateY(-5px);
+      border-color: rgba(255, 214, 0, 0.35);
       box-shadow: var(--shadow-card);
     }
 
-    .step-num {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: rgba(255, 214, 0, 0.12);
-      border: 1px solid var(--brand-yellow);
-      color: var(--brand-yellow);
-      font-size: 1.2rem;
-      font-weight: 800;
+    .step-top {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .step-num {
+      font-family: var(--font-mono);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--brand-yellow);
+    }
+
+    .step-icon-svg {
+      width: 26px;
+      height: 26px;
+      color: var(--text-muted);
     }
 
     .step-card h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
+      font-size: 1.3rem;
+      font-weight: 800;
       margin-bottom: 12px;
       color: #FFFFFF;
+      letter-spacing: -0.02em;
     }
 
     .step-card p {
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       color: var(--text-secondary);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     /* -------------------------------------------------------------
-       FAQ ACCORDION (SEO RICH SNIPPET READY)
+       FAQ ACCORDION (INTERACTIVE & REFINED)
        ------------------------------------------------------------- */
     .faq-container {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -917,12 +1195,12 @@
     }
 
     .faq-item:hover {
-      border-color: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.18);
     }
 
     .faq-question {
-      padding: 22px 26px;
-      font-size: 1.05rem;
+      padding: 24px 28px;
+      font-size: 1.08rem;
       font-weight: 700;
       color: #FFFFFF;
       cursor: pointer;
@@ -930,99 +1208,106 @@
       align-items: center;
       justify-content: space-between;
       user-select: none;
+      letter-spacing: -0.01em;
     }
 
-    .faq-icon {
-      font-size: 1.3rem;
+    .faq-icon-svg {
+      width: 20px;
+      height: 20px;
       color: var(--brand-yellow);
-      transition: transform 0.25s ease;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
     }
 
-    .faq-item.open .faq-icon {
+    .faq-item.open .faq-icon-svg {
       transform: rotate(45deg);
     }
 
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      transition: max-height 0.35s ease-out, padding 0.35s ease;
       color: var(--text-secondary);
-      font-size: 0.96rem;
-      line-height: 1.6;
-      padding: 0 26px;
+      font-size: 0.98rem;
+      line-height: 1.65;
+      padding: 0 28px;
     }
 
     .faq-item.open .faq-answer {
-      max-height: 300px;
-      padding: 0 26px 22px;
+      max-height: 350px;
+      padding: 0 28px 26px;
     }
 
     /* -------------------------------------------------------------
-       DOWNLOAD BANNER (APPLE CTA)
+       DOWNLOAD BANNER (APPLE CTA FINALE)
        ------------------------------------------------------------- */
     .download-card {
-      background: radial-gradient(circle at top right, rgba(255, 214, 0, 0.15), transparent 60%), #141418;
+      background: radial-gradient(circle at 80% 20%, rgba(255, 214, 0, 0.14), transparent 60%), #0E0E13;
       border: 1px solid rgba(255, 214, 0, 0.3);
       border-radius: var(--radius-xl);
-      padding: 60px 40px;
+      padding: 72px 48px;
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 214, 0, 0.12);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 50px rgba(255, 214, 0, 0.12);
       position: relative;
       overflow: hidden;
     }
 
     .download-card h2 {
-      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
       font-weight: 900;
-      letter-spacing: -0.03em;
-      margin-bottom: 18px;
+      letter-spacing: -0.035em;
+      margin-bottom: 20px;
+      line-height: 1.12;
     }
 
     .download-card p {
-      font-size: 1.15rem;
+      font-size: 1.18rem;
       color: var(--text-secondary);
-      max-width: 640px;
-      margin: 0 auto 36px;
+      max-width: 660px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
     }
 
     /* -------------------------------------------------------------
-       FOOTER (APPLE SITEMAP)
+       FOOTER (AWWWARDS EDITORIAL SITEMAP)
        ------------------------------------------------------------- */
     .site-footer {
-      background: #050506;
+      background: #040405;
       border-top: 1px solid var(--border-subtle);
-      padding: 80px 0 40px;
-      font-size: 0.9rem;
+      padding: 90px 0 45px;
+      font-size: 0.92rem;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr repeat(3, 1fr);
-      gap: 48px;
-      margin-bottom: 60px;
+      grid-template-columns: 2.2fr repeat(3, 1fr);
+      gap: 56px;
+      margin-bottom: 70px;
     }
 
     .footer-brand p {
       color: var(--text-muted);
-      margin-top: 12px;
-      max-width: 320px;
-      line-height: 1.5;
+      margin-top: 16px;
+      max-width: 340px;
+      line-height: 1.6;
+      font-size: 0.94rem;
     }
 
     .footer-col h4 {
-      font-size: 0.88rem;
-      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       color: #FFFFFF;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .footer-col ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
 
     .footer-col a {
@@ -1035,13 +1320,13 @@
     }
 
     .footer-bottom {
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       color: var(--text-muted);
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       flex-wrap: wrap;
       gap: 16px;
     }
@@ -1065,6 +1350,12 @@
       .nav-menu {
         display: none;
       }
+      .simulator-wrapper {
+        padding: 24px;
+      }
+      .sim-bubble {
+        max-width: 100%;
+      }
     }
 
     @media (max-width: 600px) {
@@ -1072,10 +1363,14 @@
         grid-template-columns: 1fr;
       }
       .hero-section {
-        padding: 130px 0 70px;
+        padding: 140px 0 70px;
       }
       .download-card {
-        padding: 40px 20px;
+        padding: 44px 24px;
+      }
+      .btn-playstore {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -1083,13 +1378,13 @@
 <body>
 
   <!-- =============================================================
-       SITE NAVIGATION BAR
+       SITE NAVIGATION BAR (FROSTED GLASS & LIVE STATUS)
        ============================================================= -->
   <header class="site-nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand-logo-group" aria-label="Bikko Início">
         <div class="brand-logo-badge">
-          <img src="assets/icons/bikkofy_icon.webp" alt="Ícone Oficial Bikko" width="40" height="40" />
+          <img src="assets/icons/bikkofy_icon.webp" alt="Ícone Oficial Bikko" width="42" height="42" />
         </div>
         <span class="brand-title">Bikko<span>.</span></span>
       </a>
@@ -1098,7 +1393,7 @@
         <ul class="nav-menu">
           <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
           <li><a href="#solucoes" class="nav-link">Para Clientes</a></li>
-          <li><a href="#solucoes" class="nav-link">Para Prestadores</a></li>
+          <li><a href="#solucoes" class="nav-link">Para Bikkers</a></li>
           <li><a href="#categorias" class="nav-link">Categorias</a></li>
           <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
@@ -1106,32 +1401,45 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="#download" class="btn btn-primary">Baixar App</a>
+        <div class="live-status-pill">
+          <span class="beacon-dot"></span>
+          <span>REDE ATIVA</span>
+        </div>
+        <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" style="padding: 8px 16px; border-radius: var(--radius-full); font-size: 0.85rem;" aria-label="Acessar Google Play">
+          <svg class="play-svg" style="width: 20px; height: 20px;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
+            <path fill="#00E676" d="M368.1 327.9l-79.6-79.6v-5.6l79.6-79.6 1.8 1 94.3 53.6c26.9 15.3 26.9 40.4 0 55.7l-94.3 53.6-1.8 .9z"/>
+            <path fill="#FF3D00" d="M370 327l-81.5-81.5L50.6 483.4c8.9 9.5 23.5 10.6 40 1.2L370 327z"/>
+            <path fill="#FFC400" d="M370 185L90.6 27.4C74.1 18 59.5 19.1 50.6 28.6L288.5 245.5 370 185z"/>
+          </svg>
+          <span style="font-weight: 700; color: #FFF; font-size: 0.85rem;">Google Play</span>
+        </a>
       </div>
     </div>
   </header>
 
   <!-- =============================================================
-       HERO SECTION
+       HERO SECTION (AWWWARDS EDITORIAL CRAFT)
        ============================================================= -->
   <main>
     <section class="hero-section">
       <div class="hero-glow-bg"></div>
       <div class="container hero-content">
         <div class="pill-badge">
-          <span class="dot"></span>
-          <span>A Revolução dos Serviços Residenciais &amp; Bicos</span>
+          <span class="mono-badge">PROTOCOLO DE SERVIÇOS 2.0</span>
+          <span>• Negociação Direta &amp; Sem Taxas</span>
         </div>
 
         <h1 class="hero-title">
-          O profissional certo para sua casa.<br />
-          <span class="gradient-text">Rápido, verificado e direto.</span>
+          Contrate profissionais locais.<br />
+          <span class="serif-italic">Com precisão</span> &amp; sem taxas abusivas.
         </h1>
 
         <p class="hero-subtitle">
-          A plataforma moderna que conecta você a diaristas, eletricistas, encanadores e montadores de confiança em minutos. Orçamentos com fotos em alta resolução, contrapropostas em tempo real e pagamento 100% direto sem taxas abusivas.
+          O ecossistema que conecta você a diaristas, eletricistas, encanadores e técnicos qualificados em minutos. Orçamentos com inspeção por fotos, até 5 rodadas de contrapropostas e pagamento direto entre as partes.
         </p>
 
+        <!-- Google Play Buttons (Sem o Link Ainda) -->
         <div class="hero-cta-group">
           <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
             <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -1165,7 +1473,7 @@
         <div class="metrics-strip">
           <div class="metric-item">
             <div class="metric-val">4.9<span>★</span></div>
-            <div class="metric-label">Avaliação dos Usuários</div>
+            <div class="metric-label">Rating Mútuo no App</div>
           </div>
           <div class="metric-item">
             <div class="metric-val">+30</div>
@@ -1180,6 +1488,48 @@
             <div class="metric-label">Conforme à LGPD</div>
           </div>
         </div>
+
+        <!-- =============================================================
+             AWWWARDS INTERACTIVE COMPONENT: NEGOTIATION SIMULATOR
+             ============================================================= -->
+        <div class="simulator-wrapper" aria-label="Simulação da Negociação de Orçamento">
+          <div class="simulator-header">
+            <div class="simulator-title-group">
+              <h3>Simulador de Chamado em Tempo Real</h3>
+              <p>Veja como funciona a negociação direta de até 5 contrapropostas no Bikko</p>
+            </div>
+            <span class="sim-rounds-badge">RODADA 2 DE 5 ATIVA</span>
+          </div>
+
+          <div class="sim-dialogue">
+            <div class="sim-bubble sim-bubble-client">
+              <div class="bubble-avatar avatar-client">CL</div>
+              <div>
+                <div class="bubble-meta">Cliente (Bikkofy) • Vila Mariana, SP</div>
+                <p>Preciso trocar 3 tomadas e verificar o disjuntor principal que está desarmando. Anexei 3 fotos do quadro elétrico. Minha proposta inicial é <span class="sim-tag-price">R$ 160,00</span>.</p>
+              </div>
+            </div>
+
+            <div class="sim-bubble sim-bubble-bikker">
+              <div class="bubble-avatar avatar-bikker">BK</div>
+              <div>
+                <div class="bubble-meta">Carlos Silva (Eletricista Bikker) • 1.4 km de distância</div>
+                <p>Olá! Pelas fotos, o disjuntor é de 32A e precisa de reaperto nos barramentos. Consigo ir hoje às 14h com teste de carga por <span class="sim-tag-price">R$ 200,00</span>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-footer-deal">
+            <div class="deal-status">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>ACORDO CONFIRMADO • R$ 200,00</span>
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">
+              Pagamento direto entre as partes após a conclusão (Pix/Dinheiro) • Zero comissão retida
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1189,10 +1539,10 @@
     <section id="solucoes" class="section-spacing">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Dois Aplicativos, Uma Só Solução</span>
-          <h2 class="section-title">Feito sob medida para quem precisa e para quem faz acontecer.</h2>
+          <span class="section-tag">DOIS APLICATIVOS • UMA PLATAFORMA</span>
+          <h2 class="section-title">Engenharia desenhada para quem contrata e para quem executa.</h2>
           <p class="section-desc">
-            Seja você um cliente em busca de um conserto urgente ou um profissional querendo aumentar sua renda com total autonomia, o ecossistema Bikko entrega a melhor experiência.
+            Eliminamos os intermediários que cobram de 20% a 30% das diárias. No ecossistema Bikko, a autonomia é total e a negociação é transparente.
           </p>
         </div>
 
@@ -1210,42 +1560,54 @@
         <!-- Panel 1: Cliente -->
         <div class="persona-panel active" id="panel-client" role="tabpanel">
           <div class="persona-card-visual">
-            <img src="assets/images/onboarding_step1.webp" alt="Ilustração 3D da experiência Bikkofy para contratação de serviços" width="600" height="600" loading="lazy" />
+            <img src="assets/images/onboarding_step1.webp" alt="Ilustração 3D da experiência Bikkofy para contratação de serviços residenciais" width="600" height="600" loading="lazy" />
           </div>
           <div class="persona-card-text">
             <div class="feature-item">
-              <div class="feature-icon-circle">📸</div>
+              <div class="feature-icon-frame">
+                <!-- Camera / Inspection SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              </div>
               <div>
-                <h3>Orçamentos com Fotos Detalhadas</h3>
-                <p>Fotografe o vazamento, a tomada com defeito ou o móvel. O profissional visualiza o problema antes de dar o preço, evitando surpresas e retrabalho.</p>
+                <h3>Inspeção Visual por Fotos em Alta Resolução</h3>
+                <p>Fotografe o vazamento, a tomada ou o móvel. O profissional analisa as imagens antes de emitir a proposta, eliminando orçamentos no escuro.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">⚖️</div>
+              <div class="feature-icon-frame">
+                <!-- Scale / Counter offer SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="4 8 12 3 20 8"/><path d="M4 14l4-6 4 6a4 4 0 0 1-8 0z"/><path d="M16 14l4-6 4 6a4 4 0 0 1-8 0z"/></svg>
+              </div>
               <div>
-                <h3>Até 5 Rodadas de Contraproposta</h3>
-                <p>Negociação flexível em tempo real. Você propõe o valor que cabe no seu bolso e chega a um acordo justo diretamente com o prestador.</p>
+                <h3>Até 5 Rodadas de Contrapropostas</h3>
+                <p>Sem leilões predatórios. Você e o profissional ajustam valores e condições com justificativas claras até atingirem o preço justo de mercado.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">💸</div>
+              <div class="feature-icon-frame">
+                <!-- Direct payment SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><circle cx="7" cy="15" r="1"/></svg>
+              </div>
               <div>
                 <h3>Pagamento Direto ao Prestador</h3>
-                <p>Pague sem intermediários via Pix, dinheiro ou cartão após a conclusão do serviço. Sem retenção de fundos nem taxas extras embutidas no seu orçamento.</p>
+                <p>Você combina e paga diretamente ao profissional via Pix, dinheiro ou cartão ao concluir o serviço. Sem taxas extras embutidas no seu bolso.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">⭐</div>
+              <div class="feature-icon-frame">
+                <!-- Star Rating SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
               <div>
-                <h3>Avaliações 5 Estrelas Verificadas</h3>
+                <h3>Avaliações 5 Estrelas dos Clientes</h3>
                 <p>Consulte a pontuação histórica e os comentários reais de outros clientes antes de confirmar o chamado.</p>
               </div>
             </div>
 
-            <div style="margin-top: 8px;">
+            <div style="margin-top: 10px;">
               <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
                 <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
@@ -1270,38 +1632,50 @@
           </div>
           <div class="persona-card-text">
             <div class="feature-item">
-              <div class="feature-icon-circle">📍</div>
+              <div class="feature-icon-frame">
+                <!-- Radar Geo SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+              </div>
               <div>
-                <h3>Chamados Próximos por Geolocalização</h3>
-                <p>Economize tempo e combustível. Receba pedidos de orçamento de clientes que estão no seu bairro e na sua rota de atendimento.</p>
+                <h3>Radar de Oportunidades por Geolocalização</h3>
+                <p>Economize deslocamento e combustível. Receba notificações de chamados abertos exclusivamente no seu raio geográfico de atuação.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">💰</div>
+              <div class="feature-icon-frame">
+                <!-- 100% Value SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8l-8 8"/><circle cx="9" cy="9" r="1.5" fill="currentColor"/><circle cx="15" cy="15" r="1.5" fill="currentColor"/></svg>
+              </div>
               <div>
-                <h3>100% do Valor Fica com Você</h3>
-                <p>Não cobramos percentuais abusivos sobre o seu suor. O valor combinado é o valor que entra na sua conta, direto do cliente.</p>
+                <h3>100% do Valor Fica com o Profissional</h3>
+                <p>Não retemos seu dinheiro. O valor combinado é o valor integral que você recebe diretamente do cliente no término do trabalho.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">🗂️</div>
+              <div class="feature-icon-frame">
+                <!-- Portfolio Grid SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
               <div>
                 <h3>Portfólio Oficial no Aplicativo</h3>
-                <p>Cadastre fotos reais dos seus serviços em categorias oficiais (alvenaria, hidráulica, elétrica, pintura) para conquistar a confiança dos clientes.</p>
+                <p>Cadastre fotos reais dos seus serviços em categorias oficiais (hidráulica, elétrica, reformas, pintura) para conquistar autoridade imediata.</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon-circle">🛡️</div>
+              <div class="feature-icon-frame">
+                <!-- Shield / Clock 48h SVG -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
               <div>
-                <h3>Validade de 48 Horas por Proposta</h3>
-                <p>Sua agenda sob controle. Propostas expiram automaticamente após 48 horas se não houver resposta, liberando seu horário para novos clientes.</p>
+                <h3>Agenda Protegida com Validade de 48 Horas</h3>
+                <p>Propostas que não recebem resposta expiram automaticamente em 48h, liberando sua disponibilidade para novos orçamentos.</p>
               </div>
             </div>
 
-            <div style="margin-top: 8px;">
+            <div style="margin-top: 10px;">
               <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkerfy')" aria-label="Baixar Bikkerfy no Google Play">
                 <svg class="play-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#00D2FF" d="M48.2 26.2C44.7 30 42.7 35.8 42.7 43.6v424.8c0 7.8 2 13.6 5.5 17.4l2.4 2.4 237.9-237.9v-5.6L50.6 23.8l-2.4 2.4z"/>
@@ -1323,148 +1697,173 @@
     </section>
 
     <!-- =============================================================
-         POPULAR CATEGORIES (FOOMY 3D ICONS)
+         POPULAR CATEGORIES (AWWWARDS GRID WITH MONO NUMBERS)
          ============================================================= -->
-    <section id="categorias" class="section-spacing" style="background: rgba(14, 14, 18, 0.4);">
+    <section id="categorias" class="section-spacing" style="background: rgba(11, 11, 14, 0.45);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Especialidades Verificadas</span>
-          <h2 class="section-title">Encontre o especialista exato para sua necessidade.</h2>
+          <span class="section-tag">CATÁLOGO ESPECIALIZADO</span>
+          <h2 class="section-title">Especialistas prontos para cada ambiente da sua casa.</h2>
           <p class="section-desc">
-            Mais de 30 categorias de serviços residenciais, comerciais e manutenção preventiva à sua disposição.
+            Mais de 30 categorias estruturadas com requisitos específicos de ferramentas, segurança e acabamento.
           </p>
         </div>
 
         <div class="categories-grid">
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 01</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/01-eletricista.webp" alt="Ícone Eletricista Residencial" width="80" height="80" loading="lazy" />
             </div>
             <h3>Eletricista</h3>
-            <p>Fiação, quadros, tomadas, disjuntores e iluminação LED.</p>
+            <p>Quadros de força, tomadas, disjuntores e iluminação técnica.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 02</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/02-encanador-hidraulica.webp" alt="Ícone Encanador e Hidráulica" width="80" height="80" loading="lazy" />
             </div>
             <h3>Encanador</h3>
-            <p>Vazamentos, torneiras, caixas d'água e tubulações.</p>
+            <p>Vazamentos ocultos, caixas d'água, registros e tubulações.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 03</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/03-montador-de-moveis.webp" alt="Ícone Montador de Móveis" width="80" height="80" loading="lazy" />
             </div>
             <h3>Montador de Móveis</h3>
-            <p>Montagem, desmontagem, ajustes e fixação de painéis.</p>
+            <p>Montagem fina, desmontagem, ajustes e fixação em alvenaria.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 04</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/04-marido-de-aluguel.webp" alt="Ícone Marido de Aluguel" width="80" height="80" loading="lazy" />
             </div>
             <h3>Marido de Aluguel</h3>
-            <p>Pequenos reparos, instalações de suportes e consertos gerais.</p>
+            <p>Instalação de varais, cortinas, suportes de TV e consertos rápidos.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 05</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/05-ar-condicionado.webp" alt="Ícone Técnico de Ar-Condicionado" width="80" height="80" loading="lazy" />
             </div>
             <h3>Ar-Condicionado</h3>
-            <p>Instalação split, limpeza preventiva, carga de gás e manutenção.</p>
+            <p>Instalação split, limpeza bactericida, carga de gás e manutenção.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 07</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/07-pintor-imovel.webp" alt="Ícone Pintor Residencial" width="80" height="80" loading="lazy" />
             </div>
             <h3>Pintor Residencial</h3>
-            <p>Pintura interna, fachadas, texturas e acabamento fino.</p>
+            <p>Pintura interna, texturas, emassamento e acabamento fino.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 08</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/08-pedreiro-reformas.webp" alt="Ícone Pedreiro e Reformas" width="80" height="80" loading="lazy" />
             </div>
-            <h3>Pedreiro &amp; Reformas</h3>
-            <p>Alvenaria, pisos, revestimentos, reboco e quebra-quebra.</p>
+            <h3>Pedreiro &amp; Obras</h3>
+            <p>Alvenaria, pisos, revestimentos cerâmicos e reformas pontuais.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 15</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/15-diarista-limpeza.webp" alt="Ícone Diarista e Limpeza" width="80" height="80" loading="lazy" />
             </div>
             <h3>Diarista &amp; Limpeza</h3>
-            <p>Faxina residencial, pós-obra, limpeza pesada e comercial.</p>
+            <p>Faxina residencial detalhada, pós-obra e conservação.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 16</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/16-jardineiro.webp" alt="Ícone Jardineiro e Paisagismo" width="80" height="80" loading="lazy" />
             </div>
             <h3>Jardineiro</h3>
-            <p>Poda de grama, corte de arbustos, paisagismo e adubação.</p>
+            <p>Poda de gramados, corte de arbustos, paisagismo e adubação.</p>
           </article>
 
           <article class="category-card">
+            <span class="category-mono-tag">CAT // 21</span>
             <div class="category-icon-wrap">
               <img src="assets/categories/21-tecnico-informatica.webp" alt="Ícone Suporte de TI e Informática" width="80" height="80" loading="lazy" />
             </div>
             <h3>Técnico de TI</h3>
-            <p>Configuração de Wi-Fi, notebooks, impressoras e formatação.</p>
+            <p>Redes Wi-Fi domésticas, cabeamento, impressoras e computadores.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- =============================================================
-         APPLE-STYLE BENTO GRID (DIFERENCIAIS)
+         BENTO GRID (PRODUCT ARCHITECTURE & DIFERENCIAIS)
          ============================================================= -->
     <section id="diferenciais" class="section-spacing">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Diferenciais da Plataforma</span>
-          <h2 class="section-title">Construído com tecnologia de ponta e foco total em segurança.</h2>
+          <span class="section-tag">ARQUITETURA DA PLATAFORMA</span>
+          <h2 class="section-title">Tecnologia desenhada para extinguir a burocracia do setor.</h2>
           <p class="section-desc">
-            Revolucionamos o mercado de prestação de serviços eliminando burocracias, taxas escondidas e retenções desnecessárias.
+            Infraestrutura moderna com foco em performance, privacidade e negociação direta de valor real.
           </p>
         </div>
 
         <div class="bento-grid">
           <article class="bento-card bento-col-8">
             <div>
-              <span class="bento-badge">Transparência Visual</span>
-              <h3>Upload de Fotos em Alta Resolução via Cloudflare R2</h3>
-              <p>Envie até 5 fotos na criação da solicitação e até 10 fotos no ciclo de vida do chamado. O profissional vê exatamente o que precisa ser reparado e envia uma proposta realista, sem orçamentos no escuro.</p>
+              <div class="bento-badge-group">
+                <span class="bento-badge">STORAGE CLOUDFLARE R2</span>
+                <span class="mono-badge">INSIGHT VISUAL</span>
+              </div>
+              <h3>Inspeção Visual Prévia por Fotos em Alta Resolução</h3>
+              <p>Envie até 5 fotos na abertura do chamado e até 10 fotos no ciclo completo. O prestador avalia a complexidade antes de passar o orçamento, evitando visitas perdidas e orçamentos errados.</p>
             </div>
             <div class="bento-highlight">Zero Surpresas na Visita</div>
           </article>
 
           <article class="bento-card bento-col-4">
             <div>
-              <span class="bento-badge">Acordo Justo</span>
+              <div class="bento-badge-group">
+                <span class="bento-badge">PROTOCOLO</span>
+                <span class="mono-badge">AGILIDADE</span>
+              </div>
               <h3>Até 5 Contrapropostas</h3>
-              <p>O cliente faz a oferta, o prestador propõe o ajuste e ambos chegam ao valor exato de mercado sem intermediários ditando regras.</p>
+              <p>O cliente faz a proposta, o prestador ajusta o valor e ambos chegam ao valor final com justificativa registrada.</p>
             </div>
             <div class="bento-highlight">5 Rodadas</div>
           </article>
 
           <article class="bento-card bento-col-4">
             <div>
-              <span class="bento-badge">Economia Real</span>
-              <h3>Sem Taxas Abusivas</h3>
-              <p>O Bikko não cobra 20% a 30% como os apps tradicionais. O valor acordado entre cliente e prestador é pago diretamente entre as partes.</p>
+              <div class="bento-badge-group">
+                <span class="bento-badge">ECONOMIA REAL</span>
+                <span class="mono-badge">TRANSPARÊNCIA</span>
+              </div>
+              <h3>0% de Comissão Abusiva</h3>
+              <p>O valor acordado entre cliente e prestador é integral. O Bikko não retém percentuais sobre o suor do profissional.</p>
+              <div class="comparison-strip">
+                <div class="comp-pill comp-others">Apps Clássicos: -20% a -30%</div>
+                <div class="comp-pill comp-bikko">Bikko: 0% Taxa</div>
+              </div>
             </div>
-            <div class="bento-highlight">0% Comissão</div>
           </article>
 
           <article class="bento-card bento-col-8">
             <div>
-              <span class="bento-badge">Privacidade &amp; LGPD</span>
-              <h3>Segurança com Exclusão em 1 Toque</h3>
-              <p>Total conformidade com a Lei nº 13.709/2018 (LGPD). Seus dados cadastrais, telefone e localização GPS são tratados com sigilo estrito e você tem autonomia total para excluir sua conta a qualquer momento direto pelo aplicativo.</p>
+              <div class="bento-badge-group">
+                <span class="bento-badge">PRIVACIDADE RIGOROSA</span>
+                <span class="mono-badge">LEI 13.709/2018</span>
+              </div>
+              <h3>Privacidade Absoluta e Exclusão em 1 Toque</h3>
+              <p>Cumprimento estrito da LGPD. Seus dados cadastrais, localização e fotos são tratados com sigilo profissional. Você tem o direito e a ferramenta para excluir sua conta e dados instantaneamente pelo próprio aplicativo.</p>
             </div>
             <div class="bento-highlight">100% Seguro &amp; Conforme</div>
           </article>
@@ -1473,35 +1872,44 @@
     </section>
 
     <!-- =============================================================
-         COMO FUNCIONA (PASSO A PASSO)
+         COMO FUNCIONA (PASSO A PASSO EDITORIAL)
          ============================================================= -->
-    <section id="como-funciona" class="section-spacing" style="background: rgba(14, 14, 18, 0.4);">
+    <section id="como-funciona" class="section-spacing" style="background: rgba(11, 11, 14, 0.45);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Simples e Eficiente</span>
-          <h2 class="section-title">Como o Bikko funciona na prática.</h2>
+          <span class="section-tag">FLUXO OPERACIONAL</span>
+          <h2 class="section-title">Como o Bikko resolve o seu problema.</h2>
           <p class="section-desc">
-            Em apenas 3 passos simples, o conserto que você precisava está resolvido.
+            Três etapas objetivas e documentadas entre a necessidade e a conclusão do conserto.
           </p>
         </div>
 
         <div class="steps-grid">
           <article class="step-card">
-            <div class="step-num">1</div>
-            <h3>Descreva o Serviço</h3>
-            <p>Selecione a categoria desejada (ex: Eletricista, Encanador), digite uma descrição curta e anexe fotos do local ou equipamento com defeito.</p>
+            <div class="step-top">
+              <span class="step-num">01</span>
+              <svg class="step-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3>Descreva o Chamado</h3>
+            <p>Selecione a categoria desejada, descreva a demanda e anexe fotos nítidas do problema direto do celular.</p>
           </article>
 
           <article class="step-card">
-            <div class="step-num">2</div>
-            <h3>Receba e Negocie Propostas</h3>
-            <p>Profissionais qualificados da sua região enviam valores em minutos. Você pode aceitar de imediato ou fazer contrapropostas em até 5 rodadas.</p>
+            <div class="step-top">
+              <span class="step-num">02</span>
+              <svg class="step-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="4 8 12 3 20 8"/><path d="M4 14l4-6 4 6a4 4 0 0 1-8 0z"/><path d="M16 14l4-6 4 6a4 4 0 0 1-8 0z"/></svg>
+            </div>
+            <h3>Receba e Ajuste o Valor</h3>
+            <p>Profissionais próximos enviam suas propostas. Ajuste o valor pelo sistema de contrapropostas em tempo real até o aceite mútuo.</p>
           </article>
 
           <article class="step-card">
-            <div class="step-num">3</div>
-            <h3>Serviço Concluído e Avaliado</h3>
-            <p>O prestador realiza o trabalho, você efetua o pagamento diretamente (Pix, dinheiro ou cartão) e ambos se avaliam no aplicativo.</p>
+            <div class="step-top">
+              <span class="step-num">03</span>
+              <svg class="step-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Serviço Concluído &amp; Avaliado</h3>
+            <p>O profissional realiza o conserto, você paga diretamente a ele por Pix ou dinheiro e ambos registram a avaliação mútua no app.</p>
           </article>
         </div>
       </div>
@@ -1513,10 +1921,10 @@
     <section id="faq" class="section-spacing">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Tire Suas Dúvidas</span>
+          <span class="section-tag">DÚVIDAS FREQUENTES</span>
           <h2 class="section-title">Perguntas Frequentes</h2>
           <p class="section-desc">
-            Tudo o que você precisa saber sobre o funcionamento do Bikkofy e do Bikkerfy.
+            Esclarecimentos detalhados sobre as regras de intermediação, pagamento e operação da plataforma.
           </p>
         </div>
 
@@ -1524,7 +1932,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>Como funciona o pagamento pelo serviço no Bikko?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               O pagamento é combinado e realizado 100% diretamente entre o cliente e o profissional prestador (Bikker) via Pix, dinheiro ou cartão ao concluir o serviço. A plataforma Bikko não retém pagamentos nem cobra comissões abusivas sobre o valor combinado.
@@ -1534,7 +1942,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>É cobrada alguma taxa para solicitar orçamentos?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               Não. Para o cliente, solicitar orçamentos no aplicativo Bikkofy é totalmente gratuito. Você pode descrever seu problema, anexar fotos e receber propostas de profissionais da sua região sem pagar nada por isso.
@@ -1544,7 +1952,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>Como funciona a rodada de contrapropostas de preço?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               A plataforma permite até 5 rodadas de contrapropostas entre cliente e profissional. Isso garante uma negociação justa e transparente em tempo real, onde ambas as partes concordam com o preço final antes da confirmação do serviço.
@@ -1554,7 +1962,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>Como me cadastrar para trabalhar e prestar serviços como Bikker?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               Basta baixar o aplicativo Bikkerfy na Google Play Store, informar seu telefone com validação segura por SMS (OTP), CPF válido e selecionar suas categorias de atuação com fotos do seu portfólio de serviços.
@@ -1564,7 +1972,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>Qual o prazo de validade das propostas de orçamento?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               Cada proposta enviada tem validade de até 48 horas. Se o cliente ou o profissional não responder dentro deste período, a solicitação expira automaticamente, liberando a agenda do profissional para novos atendimentos.
@@ -1574,7 +1982,7 @@
           <div class="faq-item">
             <div class="faq-question" onclick="toggleFaq(this)">
               <span>Como o Bikko protege meus dados segundo a LGPD?</span>
-              <span class="faq-icon">+</span>
+              <svg class="faq-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </div>
             <div class="faq-answer">
               Cumprimos rigorosamente a Lei Geral de Proteção de Dados (LGPD). Seus dados são protegidos por criptografia e você tem controle total para editar ou excluir sua conta diretamente no aplicativo a qualquer momento em 1 clique (<code>Perfil &gt; Configurações &gt; Excluir Conta</code>).
@@ -1585,14 +1993,15 @@
     </section>
 
     <!-- =============================================================
-         DOWNLOAD CALL TO ACTION BANNER (APPLE STYLE)
+         DOWNLOAD CALL TO ACTION BANNER (AWWWARDS FINALE)
          ============================================================= -->
     <section id="download" class="section-spacing">
       <div class="container">
         <div class="download-card">
-          <h2>Pronto para resolver seus serviços com agilidade?</h2>
+          <span class="mono-badge" style="margin-bottom: 16px; display: inline-block;">DOWNLOAD OFICIAL • GOOGLE PLAY</span>
+          <h2>Pronto para transformar sua experiência com serviços?</h2>
           <p>
-            Baixe agora o aplicativo oficial na Google Play Store e experimente a nova era dos serviços locais sob demanda.
+            Baixe os aplicativos oficiais e faça parte da plataforma que mais valoriza o tempo de quem contrata e o suor de quem trabalha.
           </p>
           <div class="hero-cta-group" style="margin-bottom: 0;">
             <a href="#download" class="btn-playstore" onclick="handlePlayStoreClick(event, 'Bikkofy')" aria-label="Baixar Bikkofy no Google Play">
@@ -1629,7 +2038,7 @@
   </main>
 
   <!-- =============================================================
-       SITE FOOTER
+       SITE FOOTER (EDITORIAL SITEMAP)
        ============================================================= -->
   <footer class="site-footer">
     <div class="container">
@@ -1637,27 +2046,27 @@
         <div class="footer-brand">
           <a href="index.html" class="brand-logo-group">
             <div class="brand-logo-badge">
-              <img src="assets/icons/bikkofy_icon.webp" alt="Logo Bikko" width="40" height="40" />
+              <img src="assets/icons/bikkofy_icon.webp" alt="Logo Bikko" width="42" height="42" />
             </div>
             <span class="brand-title">Bikko<span>.</span></span>
           </a>
           <p>
-            Plataforma inteligente de serviços locais e bicos rápidos. Conectando pessoas e oportunidades com segurança, transparência e velocidade.
+            Plataforma descentralizada de serviços residenciais e bicos sob demanda. Segurança técnica, negociação direta e respeito irrestrito ao usuário.
           </p>
         </div>
 
         <div class="footer-col">
-          <h4>Ecossistema</h4>
+          <h4>Plataforma</h4>
           <ul>
             <li><a href="#solucoes">Bikkofy para Clientes</a></li>
             <li><a href="#solucoes">Bikkerfy para Prestadores</a></li>
-            <li><a href="#categorias">Categorias de Serviços</a></li>
+            <li><a href="#categorias">Catálogo de Categorias</a></li>
             <li><a href="#diferenciais">Diferenciais e Tecnologia</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Transparência &amp; Legal</h4>
+          <h4>Transparência</h4>
           <ul>
             <li><a href="privacidade.html">Política de Privacidade (LGPD)</a></li>
             <li><a href="termos.html">Termos e Condições de Uso</a></li>
@@ -1667,9 +2076,9 @@
         </div>
 
         <div class="footer-col">
-          <h4>Ajuda &amp; Contato</h4>
+          <h4>Contato &amp; Dev</h4>
           <ul>
-            <li><a href="#faq">Perguntas Frequentes (FAQ)</a></li>
+            <li><a href="#faq">Central de Ajuda (FAQ)</a></li>
             <li><a href="mailto:contato@bikkofy.com.br">contato@bikkofy.com.br</a></li>
             <li><a href="https://github.com/emersonfiwre/bikkoweb" target="_blank" rel="noopener noreferrer">Repositório Oficial no GitHub</a></li>
           </ul>
@@ -1678,13 +2087,13 @@
 
       <div class="footer-bottom">
         <p>© 2026 Bikko Tecnologia. Todos os direitos reservados. CNPJ sob consulta.</p>
-        <p>Bikkofy (`br.com.bikkofy.bikko`) &amp; Bikkerfy (`br.com.bikkofy.bikker`)</p>
+        <p class="mono-badge" style="color: var(--text-muted);">BIKKOFY (CLIENTES) &amp; BIKKERFY (PRESTADORES)</p>
       </div>
     </div>
   </footer>
 
   <!-- =============================================================
-       LIGHTWEIGHT VANILLA JAVASCRIPT (TABS & ACCORDION)
+       MICRO-INTERACTIONS & SCRIPTS
        ============================================================= -->
   <script>
     function switchTab(persona) {
@@ -1716,7 +2125,6 @@
       const item = el.parentElement;
       const isOpen = item.classList.contains('open');
 
-      // Fechar outros itens abertos para manter visual limpo (estilo Apple)
       document.querySelectorAll('.faq-item').forEach(faq => {
         faq.classList.remove('open');
       });
