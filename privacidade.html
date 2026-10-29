@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade — Bikkofy &amp; Bikkerfy</title>
-  <meta name="description" content="Política de Privacidade oficial dos aplicativos Bikkofy (Clientes) e Bikkerfy (Prestadores de Serviço / Bikkers), em conformidade com a LGPD (Lei nº 13.709/2018) e Google Play Store." />
+  <meta name="description" content="Política de Privacidade dos aplicativos Bikkofy (Clientes) e Bikkerfy (Prestadores de Serviço / Bikkers)." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#121212" />
+  <meta name="theme-color" content="#f5f1e9" />
   <style>
     :root {
       --brand-yellow: #FFD600;
@@ -410,6 +410,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="assets/legal.css" />
 </head>
 <body>
 
@@ -432,10 +433,10 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
-      <span class="hero-eyebrow">Transparência, Segurança &amp; LGPD</span>
+      <span class="hero-eyebrow">Transparência e LGPD</span>
       <h1>Política de Privacidade Oficial</h1>
       <p>
-        Esta Política de Privacidade descreve de forma clara, transparente e objetiva como coletamos, utilizamos, armazenamos e protegemos os seus dados pessoais nos aplicativos <strong>Bikkofy</strong> (Clientes) e <strong>Bikkerfy</strong> (Prestadores de Serviço / Bikkers).
+        Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e tratamos os seus dados pessoais nos aplicativos <strong>Bikkofy</strong> (Clientes) e <strong>Bikkerfy</strong> (Prestadores de Serviço / Bikkers).
       </p>
       <div class="meta-bar">
         <span class="meta-pill">App Cliente: <code>br.com.bikkofy.bikko</code></span>
@@ -459,7 +460,7 @@
         <li><a href="#exclusao-de-conta">5. Exclusão de Conta e Dados</a></li>
         <li><a href="#direitos-lgpd">6. Direitos do Titular (LGPD)</a></li>
         <li><a href="#seguranca">7. Segurança da Informação</a></li>
-        <li><a href="#contato-dpo">8. Contato do Encarregado (DPO)</a></li>
+        <li><a href="#contato-dpo">8. Canal de Privacidade</a></li>
       </ol>
     </nav>
 
@@ -467,14 +468,14 @@
     <section id="escopo" class="section-card">
       <h2><span class="section-num">1</span> Introdução e Escopo</h2>
       <p>
-        Bem-vindo ao ecossistema <strong>Bikkofy &amp; Bikkerfy</strong>. Nós valorizamos a sua privacidade e estamos comprometidos com a proteção dos seus dados pessoais, atuando em estrita conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei Federal nº 13.709/2018)</strong>, o <strong>Marco Civil da Internet (Lei Federal nº 12.965/2014)</strong> e as políticas de Segurança de Dados da <strong>Google Play Store (User Data Policy)</strong>.
+        Bem-vindo ao ecossistema <strong>Bikkofy &amp; Bikkerfy</strong>. Esta política apresenta as práticas de tratamento de dados pessoais adotadas pela plataforma, à luz da <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei Federal nº 13.709/2018)</strong>, do <strong>Marco Civil da Internet (Lei Federal nº 12.965/2014)</strong> e das políticas aplicáveis da <strong>Google Play Store</strong>.
       </p>
       <p>
         Esta Política de Privacidade aplica-se integralmente aos dois aplicativos móveis oficiais que compõem a nossa plataforma de conexão de serviços locais:
       </p>
       <ul>
         <li>
-          <strong>Bikkofy (Aplicativo do Cliente — pacote Android <code>br.com.bikkofy.bikko</code>):</strong> voltado para usuários e consumidores que buscam profissionais qualificados, enviam solicitações de orçamento, negociam propostas e avaliam serviços realizados.
+          <strong>Bikkofy (Aplicativo do Cliente — pacote Android <code>br.com.bikkofy.bikko</code>):</strong> voltado para usuários e consumidores que buscam prestadores de serviço, enviam solicitações de orçamento, negociam propostas e avaliam serviços realizados.
         </li>
         <li>
           <strong>Bikkerfy (Aplicativo do Prestador / Bikker — pacote Android <code>br.com.bikkofy.bikker</code>):</strong> voltado para prestadores de serviço independentes ("Bikkers") que divulgam seu portfólio profissional, recebem chamados no Radar, enviam orçamentos e gerenciam seus atendimentos.
@@ -495,7 +496,7 @@
       <h3>2.1. Dados Cadastrais e de Identificação</h3>
       <ul>
         <li><strong>Nome completo:</strong> Para identificação pessoal entre Cliente e Prestador durante orçamentos e atendimentos.</li>
-        <li><strong>CPF (Cadastro de Pessoas Físicas):</strong> Coletado exclusivamente para verificação de titularidade, prevenção a fraudes, garantia de autenticidade dos perfis cadastrados e segurança mútua entre as partes.</li>
+        <li><strong>CPF (Cadastro de Pessoas Físicas):</strong> Coletado para apoiar a confirmação de titularidade e reduzir riscos de fraude. Essa coleta não representa certificação, checagem de antecedentes, vistoria presencial ou validação técnica de Prestadores.</li>
         <li><strong>Endereço de e-mail:</strong> Para comunicações oficiais da conta, suporte e recuperação cadastral.</li>
         <li><strong>Número de telefone celular:</strong> Utilizado para autenticação segura via código único por SMS (<strong>SMS OTP via Firebase Authentication</strong>) e contato operacional entre Cliente e Prestador no contexto de uma solicitação de serviço.</li>
         <li><strong>Dados Profissionais (exclusivo para Prestadores no Bikkerfy):</strong> Categoria/profissão principal, anos de experiência, biografia profissional e região de atendimento.</li>
@@ -525,17 +526,17 @@
           </ol>
         </li>
         <li>
-          <strong>Armazenamento Seguro:</strong> As imagens enviadas são transmitidas diretamente por conexões criptografadas (URLs pré-assinadas HTTPS PUT) para armazenamento em nuvem de alta segurança no <strong>Cloudflare R2</strong>.
+          <strong>Armazenamento:</strong> As imagens enviadas são transmitidas por conexões HTTPS e armazenadas no <strong>Cloudflare R2</strong>, conforme a funcionalidade utilizada pelo usuário.
         </li>
       </ul>
 
       <h3>2.4. Dados de Diagnóstico, Logs Técnicos e Dispositivo</h3>
       <ul>
         <li>
-          <strong>Tokens de Notificação Push (Firebase Cloud Messaging — FCM):</strong> Identificador de dispositivo utilizado exclusivamente para enviar alertas em tempo real sobre novas solicitações de orçamento, respostas, contrapropostas e atualizações de status de pedidos.
+          <strong>Tokens de Notificação Push (Firebase Cloud Messaging — FCM):</strong> Identificador de dispositivo utilizado para enviar notificações sobre solicitações de orçamento, respostas, contrapropostas e atualizações de status de pedidos.
         </li>
         <li>
-          <strong>Diagnósticos e Relatórios de Falha (Firebase Crashlytics):</strong> Registros técnicos anônimos de falhas (stack traces), modelo do aparelho, versão do sistema operacional Android e identificador único de rastreio de requisição (<code>X-Correlation-ID</code>), utilizados exclusivamente para identificar e corrigir erros e garantir a estabilidade da plataforma.
+          <strong>Diagnósticos e Relatórios de Falha (Firebase Crashlytics):</strong> Registros técnicos de falhas (stack traces), modelo do aparelho, versão do sistema operacional Android e identificador único de rastreio de requisição (<code>X-Correlation-ID</code>), utilizados para investigar e corrigir erros técnicos.
         </li>
       </ul>
 
@@ -579,10 +580,10 @@
       <h2><span class="section-num">3</span> Finalidade do Tratamento dos Dados</h2>
       <p>Os dados coletados são tratados estritamente para as seguintes finalidades legítimas:</p>
       <ul>
-        <li><strong>Autenticação e Segurança de Acesso:</strong> Validar a identidade do usuário por meio de código SMS OTP (Firebase Phone Auth) e emissão de tokens criptografados (JWT).</li>
+        <li><strong>Autenticação e Segurança de Acesso:</strong> Validar a posse do número de telefone cadastrado por meio de código SMS OTP (Firebase Phone Auth) e emitir tokens de sessão (JWT).</li>
         <li><strong>Conexão Geolocalizada:</strong> Encontrar e ranquear prestadores de serviço próximos ao cliente utilizando consultas espaciais seguras.</li>
         <li><strong>Gestão de Orçamentos e Negociações:</strong> Permitir o envio de solicitações de serviço, análise de fotos do chamado e negociação de valores (incluindo até 5 rodadas de contrapropostas documentadas entre Cliente e Prestador).</li>
-        <li><strong>Avaliações e Reputação:</strong> Registrar notas de 1 a 5 estrelas, comentários pós-serviço e relatórios técnicos de conclusão para manter a qualidade e confiança da comunidade.</li>
+        <li><strong>Avaliações e Reputação:</strong> Registrar notas de 1 a 5 estrelas, comentários pós-serviço e relatórios técnicos de conclusão como referência da experiência relatada pelas partes.</li>
         <li><strong>Comunicação Transacional:</strong> Enviar notificações push sobre novos pedidos de orçamento, contrapropostas aceitas ou recusadas e conclusão de serviços.</li>
         <li><strong>Prevenção a Fraudes e Suporte Técnico:</strong> Auditar incidentes técnicos via <code>X-Correlation-ID</code> e coibir cadastros falsos ou condutas abusivas.</li>
       </ul>
@@ -615,19 +616,19 @@
     <section id="exclusao-de-conta" class="section-card">
       <h2><span class="section-num">5</span> Exclusão de Conta e Dados (Instruções Oficiais)</h2>
       <p>
-        Em total conformidade com a <strong>LGPD</strong> e com a política de <strong>Exclusão de Conta da Google Play Store</strong>, você possui controle total para solicitar a exclusão da sua conta e dos seus dados pessoais a qualquer momento, diretamente pelo aplicativo ou por meio do nosso canal web/e-mail.
+        Você pode solicitar a exclusão da sua conta e dos seus dados pessoais pelo aplicativo ou pelo canal de contato informado nesta página, observadas as hipóteses de retenção previstas em lei.
       </p>
 
       <div class="deletion-box">
-        <h3>Opção A — Exclusão Imediata Dentro do Aplicativo (Bikkofy e Bikkerfy)</h3>
-        <p>Você pode excluir sua conta instantaneamente sem precisar entrar em contato com o suporte, seguindo o caminho abaixo dentro do aplicativo <strong>Bikkofy</strong> ou <strong>Bikkerfy</strong>:</p>
+        <h3>Opção A — Exclusão pelo Aplicativo (Bikkofy e Bikkerfy)</h3>
+        <p>Você pode iniciar a exclusão da conta pelo próprio aplicativo, seguindo o caminho abaixo:</p>
         <div class="step-badge">Perfil &gt; Configurações (ícone de engrenagem ⚙️) &gt; Excluir minha conta</div>
         <ol>
           <li>Abra o aplicativo <strong>Bikkofy</strong> (Cliente) ou <strong>Bikkerfy</strong> (Prestador) e faça login na sua conta;</li>
           <li>Na barra de navegação inferior, toque na aba <strong>Perfil</strong>;</li>
           <li>No canto superior direito da tela de Perfil, toque no ícone de <strong>Configurações (engrenagem ⚙️)</strong>;</li>
           <li>Role até o final da página de Configurações e toque no botão <strong>"Excluir minha conta"</strong> (ou <em>"Apagar conta"</em>);</li>
-          <li>Confirme a solicitação no diálogo de segurança. Sua sessão será encerrada e sua conta será desativada imediatamente.</li>
+          <li>Confirme a solicitação no diálogo de segurança. A conta será marcada para exclusão e sua sessão será encerrada.</li>
         </ol>
       </div>
 
@@ -637,18 +638,18 @@
           Caso você já tenha desinstalado o aplicativo ou não consiga acessar sua conta, você pode solicitar a exclusão total da conta e dos seus dados enviando um e-mail para:
         </p>
         <p style="margin-top: 8px;">
-          📧 <strong><a href="mailto:privacidade@bikkofy.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta%20-%20Bikkofy">privacidade@bikkofy.com.br</a></strong> ou <strong><a href="mailto:contato@bikkofy.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta%20-%20Bikkofy">contato@bikkofy.com.br</a></strong>
+          📧 <strong><a href="mailto:contato@bikkofy.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta%20-%20Bikkofy">contato@bikkofy.com.br</a></strong>
         </p>
         <p style="margin-top: 8px; margin-bottom: 0;">
-          Informe no e-mail o seu <strong>nome completo</strong> e o <strong>número de telefone celular (com DDD)</strong> cadastrado no aplicativo para que possamos validar sua titularidade e processar a exclusão em até <strong>15 (quinze) dias corridos</strong>.
+          Informe no e-mail o seu <strong>nome completo</strong> e o <strong>número de telefone celular (com DDD)</strong> cadastrado no aplicativo para que possamos validar a titularidade e conduzir a solicitação.
         </p>
       </div>
 
       <h3>O que acontece após a exclusão da conta? (Prazos e Retenção Legal)</h3>
       <ul>
-        <li><strong>Inativação Imediata (Soft Delete):</strong> No momento em que você confirma a exclusão no aplicativo, sua conta recebe imediatamente a marcação lógica de exclusão (<code>deleted_at</code>), seu perfil deixa de ser exibido em buscas ou radares, seus tokens de notificação push (FCM) são desvinculados e seu acesso é revogado na hora.</li>
-        <li><strong>Dados Eliminados ou Anonimizados:</strong> Fotos de perfil, portfólio, endereço/localização e dados de sessão são removidos ou anonimizados de nossas bases ativas em até 30 (trinta) dias após a solicitação.</li>
-        <li><strong>Retenção Legal Obrigatória (Art. 16 da LGPD):</strong> Determinados registros mínimos (como logs de acesso com data, hora e IP pelo prazo de 6 meses conforme o <strong>Art. 15 do Marco Civil da Internet — Lei nº 12.965/2014</strong>, e registros históricos de transações/orçamentos para exercício regular de direitos em processos judiciais, administrativos ou prevenção a fraudes, nos termos do Art. 16, I da LGPD) são mantidos de forma isolada, restrita e bloqueada para uso comercial, sendo eliminados definitivamente após o término dos prazos prescricionais aplicáveis.</li>
+        <li><strong>Inativação da conta:</strong> Após a confirmação da solicitação, a conta é marcada para exclusão, o perfil deixa de ser exibido em buscas ou radares e o acesso é encerrado.</li>
+        <li><strong>Tratamento dos dados ativos:</strong> Fotos de perfil, portfólio, endereço/localização e dados de sessão poderão ser eliminados ou anonimizados das bases ativas conforme os ciclos operacionais aplicáveis.</li>
+        <li><strong>Retenção legal e exercício de direitos:</strong> Alguns registros podem ser preservados pelo tempo necessário para cumprir obrigações legais, prevenir fraudes ou resguardar o exercício regular de direitos, nos termos da legislação aplicável. Esses registros não são mantidos para fins de publicidade.</li>
       </ul>
     </section>
 
@@ -667,24 +668,23 @@
     <!-- 7. Segurança da Informação -->
     <section id="seguranca" class="section-card">
       <h2><span class="section-num">7</span> Segurança da Informação</h2>
-      <p>Adotamos medidas técnicas e administrativas rigorosas para proteger seus dados pessoais contra acessos não autorizados, perda, alteração ou divulgação indevida:</p>
+      <p>Adotamos medidas técnicas e administrativas proporcionais ao serviço para reduzir riscos de acessos não autorizados, perda, alteração ou divulgação indevida:</p>
       <ul>
-        <li><strong>Criptografia em Trânsito (HTTPS / TLS):</strong> Todas as comunicações entre os aplicativos Android (<code>Bikkofy</code> e <code>Bikkerfy</code>), nossa API e o armazenamento de imagens no Cloudflare R2 trafegam exclusivamente sob criptografia TLS/HTTPS, com bloqueio de tráfego em texto puro (<code>cleartextTrafficPermitted="false"</code>) em versão de produção.</li>
+        <li><strong>Criptografia em Trânsito (HTTPS / TLS):</strong> As comunicações de produção entre os aplicativos Android (<code>Bikkofy</code> e <code>Bikkerfy</code>), a API e o armazenamento de imagens são configuradas para utilizar HTTPS/TLS.</li>
         <li><strong>Autenticação Forte Sem Senha Fraca:</strong> O acesso é protegido por verificação de posse de número telefônico via <strong>SMS OTP (Firebase Authentication)</strong> combinada com tokens de sessão assinados digitalmente (<strong>JWT — JSON Web Token</strong>).</li>
         <li><strong>Controle de Acesso e Rate Limiting:</strong> Nossos servidores contam com limitação de taxa de requisições por IP (Rate Limiting), isolamento de rotas autenticadas e rastreabilidade ponta a ponta via <code>X-Correlation-ID</code>.</li>
       </ul>
     </section>
 
-    <!-- 8. Contato do DPO -->
+    <!-- 8. Canal de Privacidade -->
     <section id="contato-dpo" class="section-card">
-      <h2><span class="section-num">8</span> Contato do Encarregado pelo Tratamento de Dados (DPO)</h2>
+      <h2><span class="section-num">8</span> Canal de Privacidade</h2>
       <p>
         Para esclarecer dúvidas sobre esta Política de Privacidade, exercer seus direitos previstos na LGPD ou realizar solicitações relativas aos seus dados pessoais, entre em contato com o nosso canal de Privacidade e Proteção de Dados:
       </p>
       <ul>
         <li><strong>Plataforma:</strong> Ecossistema Bikkofy &amp; Bikkerfy</li>
-        <li><strong>E-mail de Privacidade / DPO:</strong> <a href="mailto:privacidade@bikkofy.com.br">privacidade@bikkofy.com.br</a></li>
-        <li><strong>Canal de Suporte Geral:</strong> <a href="mailto:contato@bikkofy.com.br">contato@bikkofy.com.br</a></li>
+        <li><strong>E-mail de Privacidade e Atendimento:</strong> <a href="mailto:contato@bikkofy.com.br">contato@bikkofy.com.br</a></li>
         <li><strong>Data da Última Atualização:</strong> Outubro de 2026</li>
       </ul>
     </section>
@@ -700,7 +700,7 @@
         <a href="termos.html">Termos e Condições de Uso</a>
         <a href="privacidade.html#exclusao-de-conta">Exclusão de Conta</a>
       </div>
-      <p>© 2026 Bikkofy &amp; Bikkerfy. Todos os direitos reservados. Em conformidade com a LGPD (Lei nº 13.709/2018).</p>
+      <p>© 2026 Bikkofy &amp; Bikkerfy. Todos os direitos reservados.</p>
     </div>
   </footer>
 
