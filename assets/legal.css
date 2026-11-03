@@ -120,7 +120,6 @@ a:focus-visible {
   color: var(--ink);
   font-size: clamp(2.5rem, 6vw, 5.25rem);
   font-weight: 800;
-  letter-spacing: -.075em;
   line-height: .96;
 }
 

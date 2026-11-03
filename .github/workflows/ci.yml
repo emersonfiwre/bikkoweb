@@ -1,0 +1,36 @@
+name: Validate Bikkofy Web
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate static site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate static site and structured data
+        run: |
+          test -f index.html
+          test -f termos.html
+          test -f privacidade.html
+          test -d assets
+          node <<'NODE'
+          const fs = require('fs');
+          const page = fs.readFileSync('index.html', 'utf8');
+          const match = page.match(/<script type="application\/ld\+json">\s*([\s\S]*?)\s*<\/script>/);
+          if (!match) throw new Error('JSON-LD ausente em index.html');
+          JSON.parse(match[1]);
+          NODE
