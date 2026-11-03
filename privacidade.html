@@ -439,7 +439,7 @@
         Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e tratamos os seus dados pessoais nos aplicativos <strong>Bikkofy</strong> (Clientes) e <strong>Bikkerfy</strong> (Prestadores de Serviço / Bikkers).
       </p>
       <div class="meta-bar">
-        <span class="meta-pill">Última atualização: <strong>Outubro de 2026</strong></span>
+        <span class="meta-pill">Última atualização: <strong>Novembro de 2026</strong></span>
       </div>
     </div>
   </section>
@@ -469,6 +469,9 @@
         Bem-vindo ao ecossistema <strong>Bikkofy &amp; Bikkerfy</strong>. Esta política apresenta as práticas de tratamento de dados pessoais adotadas pela plataforma, à luz da <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei Federal nº 13.709/2018)</strong>, do <strong>Marco Civil da Internet (Lei Federal nº 12.965/2014)</strong> e das políticas aplicáveis da <strong>Google Play Store</strong>.
       </p>
       <p>
+        <strong>Controlador dos Dados:</strong> A plataforma é operada sob a denominação <strong>Bikkofy &amp; Bikkerfy Tecnologia</strong>, que atua como controladora dos dados pessoais coletados no âmbito dos aplicativos, definindo as finalidades e meios de tratamento nos termos do Artigo 5º, VI da LGPD.
+      </p>
+      <p>
         Esta Política de Privacidade aplica-se integralmente aos dois aplicativos móveis oficiais que compõem a nossa plataforma de conexão de serviços locais:
       </p>
       <ul>
@@ -481,6 +484,9 @@
       </ul>
       <div class="highlight-box">
         <strong>Navegação sem cadastro prévio (Deferred Signup):</strong> No aplicativo <strong>Bikkofy</strong>, você pode explorar categorias, buscar serviços e visualizar perfis públicos de profissionais sem criar uma conta. A coleta de dados cadastrais somente ocorre quando você decide autenticar-se para solicitar um orçamento, gerenciar pedidos ou editar seu perfil.
+      </div>
+      <div class="highlight-box">
+        <strong>Tratamento de Dados de Menores de Idade:</strong> Os aplicativos Bikkofy e Bikkerfy destinam-se exclusivamente a pessoas maiores de 18 (dezoito) anos e plenamente capazes. A plataforma <strong>não coleta e não trata intencionalmente dados pessoais de crianças ou adolescentes</strong> (Art. 14 da LGPD). Na hipótese de identificação de conta cadastrada por menor de idade, a respectiva conta e os dados associados serão prontamente excluídos de nossos servidores.
       </div>
     </section>
 
@@ -608,6 +614,14 @@
           <strong>Requisição Legal ou Autoridades Públicas:</strong> Quando estritamente exigido por ordem judicial ou autoridade competente, nos termos da legislação brasileira.
         </li>
       </ul>
+
+      <h3>4.1. Transferência Internacional de Dados (Art. 33 da LGPD)</h3>
+      <p>
+        Para garantir alta disponibilidade, escalabilidade e segurança de padrão internacional, determinados dados podem ser armazenados e processados em centros de dados em nuvem operados por nossos parceiros tecnológicos com sede no exterior (notadamente nos Estados Unidos da América), como o <strong>Google Firebase (Google LLC)</strong> e o <strong>Cloudflare R2 (Cloudflare, Inc.)</strong>.
+      </p>
+      <p>
+        Tais transferências internacionais fundamentam-se no <strong>Artigo 33, incisos II, V e IX da LGPD</strong>, amparadas por cláusulas-padrão contratuais, acordos de processamento de dados (Data Processing Agreements) e certificações internacionais de segurança da informação (como SOC 2, ISO/IEC 27001 e conformidade com o GDPR).
+      </p>
     </section>
 
     <!-- 5. Exclusão de Conta e Dados -->
@@ -646,8 +660,9 @@
       <h3>O que acontece após a exclusão da conta? (Prazos e Retenção Legal)</h3>
       <ul>
         <li><strong>Inativação da conta:</strong> Após a confirmação da solicitação, a conta é marcada para exclusão, o perfil deixa de ser exibido em buscas ou radares e o acesso é encerrado.</li>
-        <li><strong>Tratamento dos dados ativos:</strong> Fotos de perfil, portfólio, endereço/localização e dados de sessão poderão ser eliminados ou anonimizados das bases ativas conforme os ciclos operacionais aplicáveis.</li>
-        <li><strong>Retenção legal e exercício de direitos:</strong> Alguns registros podem ser preservados pelo tempo necessário para cumprir obrigações legais, prevenir fraudes ou resguardar o exercício regular de direitos, nos termos da legislação aplicável. Esses registros não são mantidos para fins de publicidade.</li>
+        <li><strong>Tratamento dos dados ativos:</strong> Fotos de perfil, portfólio, endereço/localização e dados de sessão são eliminados ou anonimizados das bases ativas conforme os ciclos operacionais aplicáveis.</li>
+        <li><strong>Guarda Obrigatória de Registros de Acesso (Marco Civil da Internet):</strong> Em estrito cumprimento ao <strong>Artigo 15 da Lei Federal nº 12.965/2014 (Marco Civil da Internet)</strong>, os registros de conexão e acesso a aplicações de internet (incluindo endereço IP, data, horário e correlation IDs) são mantidos obrigatoriamente sob sigilo pelo prazo legal inafastável de <strong>6 (seis) meses</strong>, sendo fornecidos exclusivamente mediante ordem judicial específica.</li>
+        <li><strong>Prevenção à Fraude e Resguardo de Direitos (Art. 16 da LGPD):</strong> Registros cadastrais associados a históricos de atendimentos concluídos, avaliações mútuas e relatórios técnicos são preservados com acesso restrito pelos prazos prescricionais previstos no Código Civil Brasileiro (Art. 205 e 206) exclusivamente para a defesa em eventuais demandas judiciais, administrativas ou fiscais, sendo terminantemente vedada sua utilização para fins comerciais ou publicitários após a solicitação de exclusão.</li>
       </ul>
     </section>
 
@@ -672,17 +687,23 @@
         <li><strong>Autenticação Forte Sem Senha Fraca:</strong> O acesso é protegido por verificação de posse de número telefônico via <strong>SMS OTP (Firebase Authentication)</strong> combinada com tokens de sessão assinados digitalmente (<strong>JWT — JSON Web Token</strong>).</li>
         <li><strong>Controle de Acesso e Rate Limiting:</strong> Nossos servidores contam com limitação de taxa de requisições por IP (Rate Limiting), isolamento de rotas autenticadas e rastreabilidade ponta a ponta via <code>X-Correlation-ID</code>.</li>
       </ul>
+
+      <h3>7.1. Procedimento em Caso de Incidentes de Segurança</h3>
+      <p>
+        Em observância ao <strong>Artigo 48 da LGPD</strong>, a plataforma mantém monitoramento contínuo de segurança. Caso venha a ocorrer qualquer incidente relevante que possa acarretar risco ou dano aos direitos dos titulares, a plataforma comunicará o fato à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> e aos titulares afetados em prazo razoável, com a descrição das medidas adotadas para reversão ou mitigação dos efeitos.
+      </p>
     </section>
 
     <!-- 8. Canal de Privacidade -->
     <section id="contato-dpo" class="section-card">
-      <h2><span class="section-num">8</span> Canal de Privacidade</h2>
+      <h2><span class="section-num">8</span> Canal de Privacidade e Encarregado de Dados (DPO)</h2>
       <p>
-        Para esclarecer dúvidas sobre esta Política de Privacidade, exercer seus direitos previstos na LGPD ou realizar solicitações relativas aos seus dados pessoais, entre em contato com o nosso canal de Privacidade e Proteção de Dados:
+        Para esclarecer dúvidas sobre esta Política de Privacidade, exercer seus direitos previstos na LGPD ou realizar solicitações relativas aos seus dados pessoais, entre em contato diretamente com o nosso <strong>Encarregado pelo Tratamento de Dados Pessoais (DPO)</strong>:
       </p>
       <ul>
-        <li><strong>Plataforma:</strong> Ecossistema Bikkofy &amp; Bikkerfy</li>
-        <li><strong>E-mail de Privacidade e Atendimento:</strong> <a href="mailto:contato@bikkofy.com.br">contato@bikkofy.com.br</a></li>
+        <li><strong>Controlador:</strong> Plataforma Bikkofy &amp; Bikkerfy Tecnologia</li>
+        <li><strong>Encarregado pelo Tratamento de Dados (DPO):</strong> Setor de Privacidade e Proteção de Dados</li>
+        <li><strong>E-mail de Contato Oficial / DPO:</strong> <a href="mailto:contato@bikkofy.com.br?subject=DPO%20-%20Privacidade%20e%20Prote%C3%A7%C3%A3o%20de%20Dados">contato@bikkofy.com.br</a></li>
         <li><strong>Data da Última Atualização:</strong> Novembro de 2026</li>
       </ul>
     </section>
